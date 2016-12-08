@@ -1,0 +1,315 @@
+
+/************fonts*************/
+@font-face {
+  font-family: 'aniversitalic';
+    src: local('Anivers Italic'), local('Anivers_Italic'), url(../fonts/anivers_italic-webfont.woff) format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'aniversregular';
+    src: local('Anivers Regular'), local('Anivers_Regular'), url(../fonts/Anivers_Regular-webfont.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'aniversbold';
+    src: local('Anivers Bold'), local('Anivers_Bold'), url(../fonts/anivers_bold-webfont.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* -----------------------------------------------------------
+RESET CSS - RESETS DEFAULT BROWSER CSS
+------------------------------------------------------------*/
+html {margin: 0; padding: 0; border: 0;}
+body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, code,del, dfn, em, img, q, dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, dialog, figure, footer, header,hgroup, nav, section {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; font-family:Arial,Helvetica,sans-serif; outline: none;}
+
+article, aside, details, figcaption, figure, dialog,footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1.5; font-size:13px;}
+a{ text-decoration:none;}
+ul li { list-style-type:none}
+.clear { clear:both}
+
+img { width:auto; height:auto; max-width:100%}
+
+.desktop-hide { display:none}
+.mobile-show { display:block}
+/*-----------------------------------------------------*/
+
+
+body {
+  font-family: 'dejavu' !important;
+}
+
+
+.container { width:100%; margin:0 auto; /* height: 200px; */}
+.overlay { background:#BDB8B8; width:100%; height:100%; display:block; position: fixed;
+ z-index:1; opacity:0; transition:opacity .3s ease;}
+.overlay.active { opacity:1; }
+.modal-popup {width: 550px; height: 197px; background-color: blue; position: fixed; left:0;
+ right:0; top:0; bottom:0; margin:auto; overflow:auto; z-index:2}
+.modal-popup { border-radius: 4px; background:#fff; transform:scale(0); transition:.5s ease all}
+.modal-popup.active { transform:scale(1)}
+.popup-copy { padding:10px;}
+.modal-popup .heading { background:#c61c2c; text-align:center; padding:10px; font-size:18px; color:#fff}
+.modal-popup .heading.sorrymsg { font-size:14px}
+.modal-popup input[type=password] {  border: 1px solid #c5c5c5;
+  border-radius: 2px;
+  padding: 10px 10px;
+  display: block;
+  width:40%;
+  font-size: 14px;
+  color: #616161;
+  
+  transition: all .5s ease; margin:0 auto}
+.modal-popup .btn {  background: #d9283f;
+  background: -moz-linear-gradient(top, #d9283f 0%, #d32337 50%, #cd1e2f 100%);
+  background: -webkit-linear-gradient(top, #d9283f 0%,#d22236 50%,#cd1e2f 100%);
+  background: -o-linear-gradient(top, #d9283f 0%,#d22236 50%,#cd1e2f 100%);
+  background: -ms-linear-gradient(top, #d9283f 0%,#d22236 50%,#cd1e2f 100%);
+  background: linear-gradient(to bottom, #d9283f 0%,#d22236 50%,#cd1e2f 100%);
+  text-shadow: 0px 1px 0px rgb(154, 11, 29);
+  border: 1px solid #8f020e;
+  padding: 5px 20px;
+  font-size: 13px;
+  box-shadow: 0px 1px 2px rgb(204, 204, 204);
+  color: #FFF;
+  border-radius: 3px;
+  transition: all .5s ease;}
+.btn-panel { width:60px; margin:15px auto 0}
+
+/*--------------header------------*/
+.headerWrapper { background:#c61c2c; font:13px Arial, Helvetica, sans-serif; color:#fff; padding:.5em 0}
+.headerWrapper .header { float:left; width:100%}
+.headerWrapper .header .logo { display: inline-block}
+.headerWrapper nav { float: right; margin-top:2.3em}
+.naviagationLink li { margin:.1em .4em 0 0; float:left; cursor:pointer; position: relative}
+.naviagationLink li:first-child { padding-top:4px}
+.naviagationLink li:first-child a { color:#fff}
+.naviagationLink li:first-child a > img { position:relative; top:3px}
+.naviagationLink li.highlighted { background:#b70f1f; border-radius:4px; vertical-align: middle; text-align: center; padding:.4em 0.7em; transition:.5s ease all; width:16px; height:16px}
+.naviagationLink li.highlighted:last-child { width:auto}
+.naviagationLink li.highlighted a { color:#fff; vertical-align:middle}
+.naviagationLink li.highlighted:hover { background:#940815}
+
+
+
+..naviagationLink li.highlighted:nth-child(4) { font-weight:bold; font-size:12px; line-height:16px; margin-right:0; padding:.44em .9em; background:#c71c2c}
+.naviagationLink .tooltip { background:#3f3f3f; border-radius:4px; position: absolute; top:31px; left:-6px; padding:5px 8px; opacity:0; visibility:hidden; transition:.5s ease all; white-space:nowrap}
+.naviagationLink li:hover .tooltip { opacity:1; visibility:visible}
+.naviagationLink li:nth-child(2) .tooltip { left:-5px}
+.tooltip { background:#3f3f3f; border-radius:4px; position: absolute; top:28px; left:-6px; padding:5px 8px; opacity:0; visibility:hidden; transition:.5s ease all; white-space:nowrap}
+.naviagationLink li:nth-child(3) .tooltip { left:-29px}
+.naviagationLink li:hover .tooltip { opacity:1; visibility:visible}
+.logo { background: url(../images/abmu_logo.png) no-repeat 0 0; width:296px; height:76px}
+/*--------------end header------------*/
+
+
+.bannerWrapper { background:url(../images/banner-bg1.jpg) no-repeat 0 0; background-size: cover; padding:2em 0 0; overflow:hidden}
+.banner-text { font:70px 'aniversregular'; color:#fff;  width: 60%; margin-top:6%; float: left;transform: translateY(-50%); transition:.5s ease all;}
+.date-panel { border:1px solid #fff; border-left:none; border-right:none; font-family: 'aniversregular'; font-size:30px; margin: 11px 0 0 166px; display: inline-block; }
+
+.paperChart { float:right; transform: translateY(100%); transition:.5s ease all .2s;}
+.paperChart.active {transform: translateY(0%); opacity:1}
+
+.addBannerWrapper { background:#fff; padding:3em 0}
+.bannerAd { width: 730px; height:90px; margin:0 auto; background:#cccccc; text-align:center; line-height:2.5em; font-size:35px; font-family:'aniversregular'; color:#999}
+
+.portfolioWrapper { background:#f1f1f1; padding:4em}
+.h1 { text-align: center; font:35px 'aniversregular'; color:#333333;}
+.redLine { border-top:2px solid #d9645d; display: inline-block; width:50px; margin-top:.4em}
+
+.investment-panel { padding: 0 10em 3em; text-align: center; margin:5em 0 5em 0; box-shadow:0 1px 0px #dddddd, inset 0 -1px 0 #fff}
+.investBlock {width:180px; text-align:center; padding: 0 2em;/* float:left; */ /* margin-right: 10%; */display: inline-block;}
+.investBlock .price { text-align: center; font-size:25px; color:#444444; font-family:Arial, Helvetica, sans-serif; font-weight: bold}
+.investBlock:nth-child(3) { margin-right:0}
+.investBlock:nth-child(3) .price { white-space:nowrap}
+.text-left { text-align:left; color:#777777}
+.plIncrease { font-size:19px; color:#09ad26}
+.plDecrease { font-size:19px; color:#C61C2C}
+.snapshotCopy { text-align:center; color:#333333; font-size:15px; font-family: 'aniversregular'; width:80%; margin:20px auto 0} 
+.copyFirst { display:block; margin-bottom:10px; font-family:'aniversregular'}
+
+.pieChart { margin:45px auto; text-align:center}
+.chart { background:#fafafc; border-radius:4px; padding:1em; margin-top:2em; border:1px solid #d2dae2}
+.chart table tr th { background:#7f8794; border-right:1px solid #fff; padding:.5em; color:#fff; text-shadow:0 2px 0px #666; vertical-align:middle}
+.chart table tr th:first-child, .chart .fund-dtl tr td:first-child { width:40%}
+.chart table tr th:first-child { border-radius:3px 0 0px 3px}
+.chart table tr th:last-child { border-radius:0px 3px 3px 0px}
+.chart .fund-dtl tr td, .chart .fund-dtl2 tr td { border-bottom:1px solid #fff; border-right:1px solid #fff; vertical-align:middle; padding:.8em .8em; background:#ededed; text-align:center}
+.chart .fund-dtl tr td:first-child, .chart .fund-dtl2 tr td:first-child { text-align: left; padding-left:2em}
+.chart .fund-dtl tr td:last-child { border-right:0}
+.chart table tr th:nth-child(2), .chart .fund-dtl tr td:nth-child(2), .chart table tr th:nth-child(3), .chart .fund-dtl tr td:nth-child(3) { width:15%} 
+.chart table tr th:nth-child(4), .chart .fund-dtl tr td:nth-child(4) { width:10%} 
+.chart table tr th:nth-child(5), .chart .fund-dtl tr td:nth-child(5) { width:10%} 
+
+.fund-dtl2 tr td:first-child { width:19%}
+.fund-dtl2 tr td:nth-child(2), .fund-dtl2 tr td:nth-child(3), .fund-dtl2 tr td:nth-child(4), .fund-dtl2 tr td:nth-child(5), .fund-dtl2 tr td:nth-child(6) { width:5%}
+
+.chart table tr:nth-child(2), .chart table tr:nth-child(8) { vertical-align:middle; }
+
+.chart .fund-dtl tr:nth-child(5) td, .chart .fund-dtl2 tr:nth-child(5) td { color:#010101}
+/*.chart .fund-dtl tr:nth-child(13) td {font-weight:bold}*/
+.chart .fund-dtl2 tr:nth-child(6) td {background:#c5cad2; font-weight:bold;}
+.heading-funds { padding:.8em 0 !important; background:#fff !important; text-align:center !important; font-weight:bold;}
+.report-panel { margin:10px 0; float:left;}
+.report-panel a { background:#3f3f3f; border-radius:4px; padding:.5em .9em; color:#fff; font-weight:bold; font-family:Arial, Helvetica, sans-serif; transition:.5s ease all}
+.report-panel a:hover { background:#c71c2c}
+.icon { position:relative; top:3px}
+.icon.two { top:4px}
+.icon.third { top:2px}
+
+.dtlPanel { float:right; margin-top:10px}
+.dtlPanel li { margin:.1em .4em 0 0; float:left; cursor:pointer; position: relative}
+.dtlPanel li a { color:#fff; vertical-align:middle}
+.dtlPanel li.highlighted { background: #3f3f3f; border-radius:4px; vertical-align: middle; text-align: center; padding: .3em 0.7em; color:#fff; transition:.5s ease all;width: 13px; height: 19px;}
+.dtlPanel li.highlighted:last-child { width:auto}
+.dtlPanel li.highlighted:hover { background:#c71c2c}
+.dtlPanel li.highlighted:nth-child(4) {font-weight: bold; font-size: 12px; line-height: 19px; margin-right: 0px; padding: 0.35em 0.9em; background: none repeat scroll 0% 0% #C71C2C;}
+.dtlPanel .tooltip { background:#3f3f3f; border-radius:4px; position: absolute; top:31px; left:-6px; padding:5px 8px; opacity:0; visibility:hidden; transition:.5s ease all; white-space:nowrap}
+.dtlPanel li:hover .tooltip { opacity:1; visibility:visible}
+.dtlPanel li:nth-child(2) .tooltip { left:-28px}
+
+.confim-panel { width:100%; font-size:25px; color:#6B6B6B; margin:15px auto 15px; text-align:center; }
+.confim-panel > p {font-family: 'aniversregular' }
+.btn-black { background:#3f3f3f; padding:0 10px; line-height:28px; border-radius:4px; border:0; color:#fff; cursor:pointer; transition:.5s ease all}
+.btn-black:hover { background:#c71c2c}
+.confim-panel label { font-size:16px; display:block; text-align:left;font-family: 'aniversregular' }
+.list {width: 426px; margin: 10px auto;}
+
+
+
+
+
+/*************footer*********************/
+td {vertical-align:top;}*/
+h1{font-size:18px; color:#333; font-weight:normal;}
+h2{font-size:14px; color:#333; font-weight:bold;}
+h3{font-size:12px; color:#333; font-weight:bold;}
+input, select{ font-family:Arial;}
+img{ border:none;}
+.clrBoth{ clear:both;}
+.fRt{ float:right!important;}
+.fLt{ float:left;}
+.fs11{ font-size:11px;}
+.fs12{ font-size:12px!important;}
+.fs14{ font-size:14px;}
+.mT2{margin-top:2px;}.mT5{margin-top:5px;}.mT5{margin-top:5px;}.mT7{margin-top:7px;}.mT10{margin-top:10px!important;}.mT15{margin-top:15px;}.mTn3{ margin-top:-3px;}.mB5{ margin-bottom:5px;}.mL5{margin-left:5px;}.mL10{margin-left:10px;}.mL17{margin-left:17px;}.mL30{margin-left:30px!important;}.pd10{ padding:10px!important;}.pT5{padding-top:5px!important;}.pT10{padding-top:10px!important;}.pL5{padding-left:5px;}.pL10{padding-left:10px;}.pL15{padding-left:15px;}.pR5{padding-right:5px;}.w203{ width:203px;}.w575{ width:575px;}.fullWidth{ width:100%;}.w23per{width:23%!important;}.h230{ height:230px;}.h232{ height:232px;}.lnHt18{line-height:18px;}.whiteBG{ background:#fff;}
+#mainContainer{ margin:0px; background: url(https://www.myuniverse.co.in/_layouts/images/ABMUPortal/topbg1.png;waf03d844955939150;wa6f8e7a5650d7d718) center top  no-repeat;}
+/* #headerContainer{ margin:0px auto;padding:15px 10px 0px 10px; width:983px; font-size:12px;}*/
+/*.companyName{ margin:0px ;float:left;}
+
+
+#bodyContainer{margin:0px auto; padding:15px 10px 0px 10px; width:999px; font-size:12px;}*/
+#ABMU_Footer_id_Footer,#id_Footer,#ctl00_ABMU_Footer_id_Footer {
+border-top: 1px solid #DEDEDE;
+ border-bottom: 8px solid #C61C2C;
+background:#fff;
+width: 100%;
+clear:both;
+margin-top:35px;
+}
+.footerCont
+{
+    border-top: 1px solid #DEDEDE;
+ border-bottom: 8px solid #C61C2C;
+background:#fff;
+width: 100%;
+clear:both;
+}
+#footerContainer {
+margin: 0px auto;
+padding: 0px 15px;
+width: 945px;
+font-size: 12px;
+}
+.footer {
+    border-top: medium none;
+    color: #777777;
+    font-size: 11px !important;
+    padding: 0;
+    text-align: center;
+}
+.popup_whiteBox{position:relative;background:; overflow:visible;}
+.popup_whiteCont{position:absolute; height: 20px; width: 20px; background-position: -84px -171px;}
+.popupWTL{top: 0px; left: 0px; clip: rect(0 10px 10px 0); }
+.popupWTR{top: 0px; right: 0px; clip: rect(auto auto 10px 10px); float: right;}
+.popupWBL{bottom: 0px;left: 0px; clip: rect(10px 10px auto auto); }
+.popupWBR{bottom: 0px; right: 0px;clip: rect(10px auto auto 10px); }
+.popupBdrTop{margin:0px;  background:url(https://www.myuniverse.co.in/sites/try/_layouts/images/ABMUPortal/popupWhtBoxBdrT.gif;wa4ae85bb145d0b6e7) right top repeat-x;  font-size:3px;padding-top:3px;}
+.popupBdrRit{margin:0px;  background:url(https://www.myuniverse.co.in/sites/try/_layouts/images/ABMUPortal/popupWhtBoxBdrR.gif;wa4476323bc4ef4e77) right top repeat-y; padding-right:3px; }
+.popupBdrBtm{padding:0px; background:url(https://www.myuniverse.co.in/sites/try/_layouts/images/ABMUPortal/popupWhtBoxBdrB.gif;wae3bddf93d7f290e2) left bottom repeat-x; margin-top:0px; height:3px; font-size:3px;}
+.popupBdrLft{margin:0px;  background:url(https://www.myuniverse.co.in/sites/try/_layouts/images/ABMUPortal/popupWhtBoxBdrL.gif;wad0185913fd8e6b3e) left top repeat-y; padding-left:3px;}
+.portlet{position:relative;background:#FFF; overflow:visible; border:1px solid #717171; }
+.portletCont{position:absolute; height: 12px; width: 12px; background-position: -105px 0px;}
+.portletTL{top: -1px; left: -1px; clip: rect(0 6px 6px 0);}
+.portletTR{top: -1px; right: -1px;_right: -2px; clip: rect(auto auto 6px 6px); float: right;}
+.portletBL{bottom: -1px;left: -1px;_bottom: -5px; clip: rect(6px 6px auto auto); }
+.portletBR{bottom: -1px; right: -1px;_bottom: -5px;_right: -2px;clip: rect(6px auto auto 6px); }
+.portlet_banner{position:relative;background:#FFF;overflow:visible;border:1px solid #717171;width:675px}
+.closeYloPop{width:10px; height:10px; background-image:url('/_layouts/images/ABMUPortal/icon_sprite.gif;wa3f2a4feb8be3085d'); background-position:-184px -128px; background-repeat:no-repeat; padding:0px; cursor:pointer;}
+.Calendar th, td{ display:table-cell; padding:5px 0; border:0px solid #cecece; vertical-align:top;}
+.inputSearch{ border:1px solid #7E9DB9; margin:0px; cursor:pointer; padding:2px 2px 1px 2px;*padding:1px 2px 0px 2px; background:#fff; border-right:none;}
+
+/*.dataTable th, td{ display:table-cell; padding:5px; border:0px solid #cecece; vertical-align:top;text-align:left;}*/
+.popup_portlet_yellowBox{position:relative;background:#ffcd67; padding:3px!important;}
+.popup_portlet_yellowCont{position:absolute; height: 10px; width: 10px; background-position: -69px -174px;}
+.popupYloTL{top: 0px; left: 0px; clip: rect(0 5px 5px 0); }
+.popupYloTR{top: 0px; right: 0px; clip: rect(auto auto 5px 5px); float: right;}
+.popupYloBL{bottom: 0px;left: 0px; clip: rect(5px 5px auto auto); }
+.popupYloBR{bottom: 0px; right: 0px;clip: rect(5px auto auto 5px); }
+.sharepopupYloBL{bottom: -2px;left: 0px; clip: rect(3px 3px auto auto); }
+.sharepopupYloBR{bottom: -2px;right: -2px; clip: rect(5px auto auto 5px); }
+.black_overlay{display:none;position:absolute;min-height:100%;top:0px;left:0px;	width:100%;height:100%;overflow:hidden;background-color:#000;z-index:999; -moz-opacity:0.7;opacity:.70;filter:alpha(opacity=70);}
+.white_content {display:none;position: absolute;left:43%;margin-left:-300px !important;top:10%;padding:0px;background:#ffcd67;z-index:1000; font-size:12px;}
+.white_content_mid{display:none;position: absolute;left:50%;margin-left:-300px !important;top:10%;padding:0px;background:#ffcd67;z-index:1000; font-size:12px;}
+.iadisclaimer {
+    color: #989797 !important;
+    display: block;
+    font-size: 11px !important;
+    line-height: 13px;
+    width: 910px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    border-top: medium none !important;
+    color: #777777 !important;
+    font-size: 11px !important;
+    margin-bottom: 10px !important;
+    padding: 0 !important;
+    text-align: center !important;
+}
+.footer-ico {
+    padding: 5px 0 2px;
+    text-align: center;
+}
+
+
+.footer a {
+    color: #777777;
+}
+
+.footer a:hover {
+    color: #777777;
+    text-decoration: underline;
+}
+#ABMU_Footer_id_broadcastmessage {
+    margin: 5px 0 0;
+    color: #989797;
+    font-size: 11px;
+    height:17px;
+}
+#id_broadcastingmessage
+{
+    color:#989797 !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .modal-popup {width: 90%; transform: scale(1);}
+
+ }
+@media only screen and (max-width: 361px) {
+  .modal-popup {height: 240px;}
+ }

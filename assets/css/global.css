@@ -1,0 +1,734 @@
+/*===================reset ===========================*/
+html { }
+body{margin:0;padding:0;  font-family: 'RobotoRegular'; color:#000;  background:#dedede!important    ; font-size:13px}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal}
+strong{font-weight:bold}
+em{font-style:italic}
+ol,ul{list-style:none; margin:0px ; padding:0px;}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%; margin:0px; padding:0px;}
+q:before,q:after{content:''}
+abbr,acronym{border:0}
+input,select,textarea, placeholder { color:#848484; font-family: 'RobotoRegular';}
+td{vertical-align:top}
+input[placeholder], [placeholder], *[placeholder] {
+    color: #808080!important;
+}
+
+input,textarea{color:#fff;border:0px solid #cecece; padding:0px; margin:0px; outline:none}
+select{color:#808080;border:1px solid #cecece; padding:2px 3px;}
+input[type="radio"]{border:none;background:none;padding:0px; margin:0px} 
+input[type="checkbox"]{border:none;background:none} 
+textarea{resize:none;overflow-x:auto;overflow-y:auto}
+a{color:#666666;text-decoration:none}
+a:hover{text-decoration:none}
+.redFont { color:#FF0000;}
+.CL { clear:both; height:0.1px;  }
+.bdrN { border:none!important}
+.FL { float:left}
+.FR { float:right}
+.bgN { background-image:none!important}
+/*input:focus { color:#6e6e6e; }*/
+/*===================reset end===========================*/
+
+
+.switchBox { width:  240px; margin:auto}
+.switchBox ul { }
+.switchBox ul li { height:35px; border:1px solid #e5e5e5 ; background:#ffffff; color:#585858; margin:0px; padding:0px; cursor:pointer}
+.switchBox ul li.lftSwitch { float:left; width:120px;   }
+.switchBox ul li.lftSwitch .lftSwitchP { padding:  8px 7px   }
+.switchBox ul li.rhtSwitch { float:right;  width:120px; }
+.switchBox ul li.rhtSwitch .rhtSwitchP { padding:  8px 7px   }
+.switchBox ul li.active { background:#c6b1b0!important; color:#fff!important}
+
+ .overlay3
+       {
+           background:url(../images/tranparent-img.png) repeat ; 
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+
+             .overlaybox3
+            {
+                position: absolute; background:#FFFFFF; border:1px solid #5a5a58;
+                top: 20%;  width:700px; left:23%; -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0; display:none; z-index:1111111111; margin-bottom:50px
+            }
+            
+.closebtn { float:right; padding:10px 10px 0 0; font-size:14px; font-weight:bold; margin: -61px -161px 0 0; }
+.close-reveal-modal { border:0px solid green; margin:-60px 0 0 0; position:absolute; width:51px; height:51px; background:url(../images/closeimg2.png);transition: all 0.5s ease-in-out;}
+.close-reveal-modal:hover {  background:url(../images/closeimg.png);transition: all 0.5s ease-in-out;}
+ .recurringWhite {}
+.recurringWhite {  }
+.recurringWhiteP { padding:25px 25px 0px 25px ; text-align:justify; color:#777; font-size:13px;}    
+.popBoxHd { font-weight:bold; margin:-90px 0 0 0; text-align:center ; font-size:16px; color:#5a5a58  ; padding-bottom:50px; background:}   
+.popBoxHd a { color:#5a5a58;  }    
+.popBoxHd a:hover { text-decoration:underline; color:#5a5a58;  }  
+
+.popForm { padding:0 0 0 0}  
+.popForm .topBox { padding: 0 0 0 0; text-transform:}
+.popForm .topBox .rowBoxPopL { float:left ; width:495px; }
+.popForm .topBox .rowBoxPopR { float:left; width:140px }  
+.popForm .topBox .rowBoxPopR .rowBoxPopRIn { padding:0 0 0 30px  }  
+
+.popForm .topBox .formRowM { padding:0px 0 0 0}
+.popForm .topBox .formRowM .input__label-content { padding-left:0px!important}
+.popForm .topBox .formRowM .input__label--hoshi { padding-left:0px!important}
+.popForm .topBox .formRowM .input__field--hoshi { padding-left:0px!important}
+
+.popForm .topBox .formRowM input { color:#999999 }
+.popForm .topBox .formRow { padding:10px 0 10px 0}
+.popForm .topBox .formInput1 { width:375px; float:left; margin:0 20px 0 0;} 
+.popForm .topBox .formInput1 .Poplabel1 { padding:0 0 0 0 } 
+.popForm .topBox .formInput1 .PopInp1 .input__field_error.focussed1 {  border-top:none; border-left:none; border-right:none; }
+.popForm .topBox .formInput1 .PopInp1 .input  { border-top:none; border-left:none; border-right:none;}
+
+.popForm .topBox .formInput2 { width:248px; float:left; margin:0 4px 0 0;} 
+.popForm .topBox .formInput2 .Poplabel1 { padding:0 0 0 0 } 
+.popForm .topBox .formInput2 .PopInp1 .input__field_error.focussed1 {  border-top:none; border-left:none; border-right:none; }
+.popForm .topBox .formInput2 .PopInp1 .input  { border-top:none; border-left:none; border-right:none;}
+
+.popForm .topBox .formInput3 { width:200px; float:left; margin:0 4px 0 0;} 
+.popForm .topBox .formInput3 .Poplabel1 { padding:0 0 0 0 } 
+.popForm .topBox .formInput3 .PopInp1 .input__field_error.focussed1 {  border-top:none; border-left:none; border-right:none; }
+.popForm .topBox .formInput3 .PopInp1 .input  { border-top:none; border-left:none; border-right:none;}
+
+.popForm .topBox .formInput4 { width:100%; float:left; margin:0 4px 0 0;} 
+.popForm .topBox .formInput4 .Poplabel1 { padding:0 0 0 0 } 
+.popForm .topBox .formInput4 .PopInp1 .input__field_error.focussed1 {  border-top:none; border-left:none; border-right:none; }
+.popForm .topBox .formInput4 .PopInp1 .input  { border-top:none; border-left:none; border-right:none;}
+
+.popForm .SecondBox  .SecondBoxBoxIn  { padding:20px 0 10px 0 }
+.popForm  .headRedUn { background:url(../images/redunderline.gif) no-repeat center bottom ; padding:0 0 8px 0; font-size:16px; text-align:center; color:#c41c2b; font-weight:bold  }
+.popForm .SecondBox .tableBox { padding:20px 0 0 0; font-size:13px;}
+.popForm .SecondBox .tableBox table { border-top:1px solid #000000; border-collapse: collapse;
+    border-spacing: 0;}
+.popForm .SecondBox .tableBox td.firstCln { border-bottom:1px solid #5a5a58;border-right:1px solid #5a5a58; padding:15px 10px; }
+.popForm .SecondBox .tableBox td.secondCln { border-bottom:1px solid #5a5a58;border-left:0px solid #5a5a58; padding:10px 10px; }
+ .tableBox .rowBoxPopRIn { padding:0 0 0 10px } 
+ .padB5 { padding-bottom:0px}
+ 
+.popForm .lastBox { padding: 0px 0 20px 0; text-transform:uppercase}
+.popForm .lastBox .lastHead { width:310px; margin:10px auto 0px auto;  }
+.popForm .lastBox .lastHead .lftHead { float:left  }
+.popForm .lastBox .lastHead .lftHead .lftHeadI { padding:7px 0 0 0; color:#000000   }
+.popForm .lastBox .lastHead .rhtHead { float:left; margin:0 0 0 25px; color:#000000 }
+
+.popForm .lastBox .formRowM { padding:15px 0 0 0}
+/*.popForm .lastBox .formRowM .input__label-content { padding-left:0px!important}
+.popForm .lastBox .formRowM .input__label--hoshi { padding-left:0px!important}
+.popForm .lastBox .formRowM .input__field--hoshi { padding-left:0px!important}*/
+
+.popForm .lastBox .formRowM input { color:#999999 }
+.popForm .lastBox .formRow { padding:10px 0 10px 0}
+.popForm .lastBox .formInput1 { width:395px; float:left; margin:0 20px 0 0;} 
+/*.popForm .lastBox .formInput1 .Poplabel1 { padding:0 0 0 0 } 
+.popForm .lastBox .formInput1 .PopInp1 .input__field_error.focussed1 {  border-top:none; border-left:none; border-right:none; }
+.popForm .lastBox .formInput1 .PopInp1 .input  { border-top:none; border-left:none; border-right:none;}*/
+
+.popForm .lastBox .formInput2 { width:233px; float:left; margin:0 0 0 0;} 
+/*.popForm .lastBox .formInput2 .Poplabel1 { padding:0 0 0 0 } 
+.popForm .lastBox .formInput2 .PopInp1 .input__field_error.focussed1 {  border-top:none; border-left:none; border-right:none; }
+.popForm .lastBox .formInput2 .PopInp1 .input  { border-top:none; border-left:none; border-right:none;}*/
+
+.popForm .lastBox .formInput3 { width:200px; float:left; margin:0 4px 0 0;} 
+/*.popForm .lastBox .formInput3 .Poplabel1 { padding:0 0 0 0 } 
+.popForm .lastBox .formInput3 .PopInp1 .input__field_error.focussed1 {  border-top:none; border-left:none; border-right:none; }
+.popForm .lastBox .formInput3 .PopInp1 .input  { border-top:none; border-left:none; border-right:none;}*/
+
+.popForm .lastBox .formInput4 { width:100%; float:left; margin:0 4px 0 0;} 
+/*.popForm .lastBox .formInput4 .Poplabel1 { padding:0 0 0 0 } 
+.popForm .lastBox .formInput4 .PopInp1 .input__field_error.focussed1 {  border-top:none; border-left:none; border-right:none; }
+.popForm .lastBox .formInput4 .PopInp1 .input  { border-top:none; border-left:none; border-right:none;}*/
+
+.popForm .lastBox .formInputThree01 { width:233px; float:left; margin:0 0 0 0;} 
+
+
+.popForm .headerP2 { color:#000000; padding:0 0 2px 0} 
+.popForm .lastBox .formInput5 { width:204px; float:left; margin:0 18px 0 0;} 
+.popForm .lastBox .formInput6 { width:427px; float:left; margin:0 18px 0 0;} 
+.popForm .lastBox .formInput7 { width:203px; float:left; margin:0 0px 0 0;} 
+
+.popForm .lastBox .formInput5-01 { width:174px; float:left; margin:0 18px 0 0;} 
+.popForm .lastBox .formInput5-02 { width:174px; float:left; margin:0 18px 0 0;} 
+.popForm .lastBox .formInput5-03 { width:264px; float:left; margin:0 18px 0 0;} 
+
+.popForm .lastBox .formInput1-divide01 { width:314px; float:left; margin:0 20px 0 0;} 
+
+.popForm .lastBox .formInput1-divide02 { width:314px; float:left; margin:0 0 0 0;} 
+
+.popForm .lastBox .btnPopN { padding-bottom:30px}
+.popForm .lastBox .btnPopN .lftCancel { float:left; width:170px;}
+.lftCancel input { height:52px; width:100%; border-radius:0; border:1px solid #000; background:#ededed; padding: 7px 10px 9px 10px; color:#000!important; font-size:15px; font-family: 'RobotoRegular'; background: #fff; text-align:center; cursor:pointer ;transition: all 0.5s ease-in-out; text-transform:uppercase}
+.lftCancel input:hover {background: #dddada;
+    transition: all 0.5s ease-in-out;border:1px solid #000;color:#000!important; font-weight: }	
+
+
+.popForm .lastBox .btnPopN .rhtContine { float:right; width:472px;}
+.rhtContine input { height:52px; width:100%; border-radius:0; border:1px solid #c41c2b;  padding: 7px 10px 9px 10px; color:#fff!important; font-size:15px; font-family: 'RobotoRegular'; background: #c41c2b; text-align:center; cursor:pointer ;transition: all 0.5s ease-in-out;   }
+.rhtContine input:hover {background: #a00e1c;
+    transition: all 0.5s ease-in-out;border:1px solid #a00e1c;color:#fff; }	
+
+
+
+/*=================================================*/
+
+
+
+.investmentNewForm { width:533px; margin:auto; padding:20px 0 0 0; font-family: 'RobotoRegular';}
+.investmentNewForm .top_band {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 28px; padding:10px 0 0px 0
+ }
+.investmentNewForm .investWhiteBox { border:1px solid #d3d3d3; background:#fff; }
+.investmentNewForm .investWhiteBox .investWhiteBoxIn  { padding:20px 35px 10px 35px }
+.investmentNewForm .investWhiteBox .investWhiteBoxIn  .headRedUn { background:url(../images/redunderline.gif) no-repeat center bottom ; padding:0 0 8px 0; font-size:16px; text-align:center; color:#c41c2b; font-weight:bold  }
+.investmentNewForm .formBox { padding:20px 0 0 0}
+.investmentNewForm .formBox .row1 { padding:0 0 11px 0;}
+.investmentNewForm .formBox .row1 .lftFrm { float:left; width:225px; }
+.investmentNewForm .formBox .row1 .rhtFrm { float:right;width:225px;  }
+
+.investmentNewForm .formBox .row1 .lftFrmChange { float:left; width:210px; }
+.investmentNewForm .formBox .row1 .rhtFrmChange { float:right;width:240px;  }
+
+.investmentNewForm .formBox .row1 input {  font-family: 'RobotoRegular';  } 
+
+.investmentNewForm .formBox .row1 .lftFrmG { float:left; width:228px; border-right:1px solid #dedede; height:50px;font-family: 'RobotoRegular'; position:relative }
+.investmentNewForm .formBox .row1 .lftFrmG .input { border:none }
+.investmentNewForm .formBox .row1 .lftFrmG .input__label-content {padding: 10px 10px 10px 0px; }
+.investmentNewForm .formBox .row1 .rhtFrmG { float:right;width:228px;  }
+.investmentNewForm .formBox .row1 .rhtFrmG .input { border:none }
+.investmentNewForm .formBox .row1 textarea { height:80px; width:100%;  }
+.investmentNewForm select { text-align:left}
+
+.permP { padding-bottom:7px!important;}
+.checkBox { width:; float:right}
+.checkBox .chkInt { float:left;  }
+.checkBox .chkInt input { margin:3px 0 0 0   }
+.checkBox .chkIntTex { float:left; margin:0 0 0 5px  }
+
+
+.investmentNewForm .formBox .row1 .lftFrm2 { float:left; width:268px; }
+.investmentNewForm .formBox .row1 .lftFrm2 .innP { padding:7px 0 0 0; text-transform:uppercase; text-align:left  }
+.investmentNewForm .formBox .row1 .rhtFrm2 { float:right;width:190px;  }
+.investmentNewForm .formBox .row1 .rhtFrm2 select { border:none  }
+
+.formMnaBdr { border-bottom:1px solid #e4e4e4; padding:0 0 0px 0}
+
+.accoutBx {}
+.accoutBx .typelft { width:198px; float:left}
+.accoutBx .typelft .typelftinround{ padding:7px 0 0 0; text-align:left}
+.accoutBx .typerht { width:263px; float:left; margin:0 0 0 0}
+.accoutBx .typerht .radMn { width:121px; float:left; margin:0 0 0 10px}
+.accoutBx .typerht .radMn .lftRadsm { width:28px; float:left; margin:0 0 0 0}
+.accoutBx .typerht .radMn .rhtRadsm { width:87px; float:left; margin:0 0 0 5px}
+.accoutBx .typerht .radMn .rhtRadsm .inround{ padding:10px 0 0 0; line-height:14px;}
+.carromod { border:0px solid red;}
+.disableBoxRad {border:0px solid red;}
+.enableBoxRad  {border:0px solid green;}
+/*.enableBoxRad  .styledRadio {background: url(../images/arrowd.png) no-repeat -2px 12px;}*/
+
+.carromod .mfs-selected-option{ background:#ccc}
+.carromod .mfs-options { display:none!important; background:#ccc}
+.carromod a.mfs-selected-option span { background: url(../images/arrowdd.png) no-repeat -2px 12px;}
+.accoutBx2 {}
+.accoutBx2 .typelft { width:348px; float:left; text-transform:uppercase}
+.accoutBx2 .typelft .typelftinround{ padding:7px 0 0 0; text-align:left}
+.accoutBx2 .typerht { width:103px; float:left; margin:0 0 0 10px}
+  .radMn { width:auto; float:left; margin:0 10px 0 0}
+  .radMn .lftRadsm { width:13px; float:left; margin:0 0 0 0}
+  .radMn .lftRadsm input { margin:10px 0 0 0}
+  .radMn .rhtRadsm { width:auto; float:left; margin:0 0 0 3px}
+ .radMn .rhtRadsm .inround{ padding:7px 0 0 0}
+
+.row1 select { text-transform:uppercase}
+
+.numYear {}
+.numYear .lftyear { float:left; width:377px; text-transform:uppercase }
+.numYear .lftyear .lftyearI { padding:9px 0 0 0 ; text-align:left }
+.numYear .rtyear { float:left; margin:0 0 0 0; width:83px}
+
+
+.smaGrey { text-align:left ;font-size:11px; padding:5px 0 0 0  }
+.smaGrey a { color:#2366a0; text-decoration:none    }
+.smaGrey a:hover { color:#2366a0; text-decoration:underline    }
+
+
+
+.btnCntBox {}
+.btnCntBox input { height:52px; width:100%; border-radius:0; border:1px solid #c41c2b; background:#ededed; padding: 7px 10px 9px 10px; color:#fff; font-size:15px; font-family: 'RobotoRegular'; background: #c41c2b; text-align:center; cursor:pointer ;transition: all 0.5s ease-in-out; float:}
+.btnCntBox input:hover {background: #a00e1c;
+    transition: all 0.5s ease-in-out;border:1px solid #a00e1c;color:#fff; }	
+	
+	.footerB { padding:10px 0 0 0;font-size:11px; text-align:center}
+	.footerB a { color:#2366a0; text-decoration:none    }
+	.footerB  a:hover { color:#2366a0; text-decoration:underline    }
+	.investment_form {font-family: 'RobotoRegular';}
+	.light {font-family: 'RobotoLight';}
+	.smtextr {font-family: 'RobotoLight'; font-size:12px; text-align:right; padding:10px 0 0 0}
+
+.formNominee { }
+.formNominee .nomineeLft { float:left; text-align:left }
+.formNominee .nomineeLft .nomineeLftIn { padding:7px 0 0 0}
+.formNominee .nomineeRht { float:left; margin:0 0 0 20px }
+
+.bankstatus{ width:313px; margin:auto;}
+.bankstatus .radMn { width:144px; float:left; margin:0 0 0 10px}
+.bankstatus .radMn .lftRadsm { width:28px; float:left; margin:0 0 0 0}
+.bankstatus .radMn .rhtRadsm { width:109px; float:left; margin:0 0 0 5px; text-align:left}
+.bankstatus .radMn .rhtRadsm .inround{ padding:7px 0 0 0}
+
+.selectArrUp { background:url(../images/arrowdvert.png) no-repeat -2px 12px ; border:1px solid red;}
+/*===================select box===========================*/
+
+
+/*=====================================*/
+.investmentNewForm { position:relative}
+.labelBox { padding:20px 0 0 0}
+
+.blueRight { float:right; right:20px; position:absolute;color:#1675cf;font-weight:normal; font-size:12px; }
+.blueRight a { color:#1675cf; text-decoration:none; font-weight:normal; font-size:12px; }
+.blueRight a:hover { text-decoration:underline; }
+.labelBox .labelRow { padding:0 0 20px 0; text-align:left}
+.labelBox .labelRow .cln01 { float:left; width:128px; margin-right:10px }
+.labelBox .labelRow .cln02 { float:left; width:110px;  margin-right:10px}
+.labelBox .labelRow .cln03 { float:left; width:190px; margin-right:10px }
+.labelBox .labelRow .cln04 { float:left; width:219px; margin-right:10px }
+.labelBox .labelRow .cln05 { float:left; width:98px ;  margin-right:10px }
+.labelBox .labelRow .cln06 { float:left; width:110px;  margin-right:10px }
+.labelBox .labelRow .cln07Mobile { float:left; width:140px;  margin-right:10px}
+.labelBox .labelRow .cln07Address { float:left; width:297px;  margin-right:10px }
+.labelBox .labelRow .cln07 { float:; width:100%; }
+
+.labelBox .labelRow .cln08 { float:left; width:168px; margin-right:10px }
+.labelBox .labelRow .cln09 { float:left; width:158px; margin-right:10px }
+.labelBox .labelRow .cln10 { float:left; width:105px;  margin-right:10px}
+.labelBox .labelRow .cln11 { float:left; width:245px;  margin-right:10px }
+.labelBox .labelRow .cln12 { float:left; width:195px;  margin-right:10px}
+.labelcheckLft { float:left; margin:0 4px 0 0; width:16px;}
+.labelcheckLft input { margin:7px 0 0 0; }
+.labelcheckRht { float:left; margin:0 0 0 0; width:415px;}
+
+
+.labelBox .labelRow  .dispTop {width:100%; padding:0 0 0px 0; font-size:13px; color:#787878 ; text-transform:uppercase  }
+.labelBox .labelRow  .dispBtm {width:100%; padding:0 0 0px 0; font-size:16px; color:#2d2d2d }
+.labelBox .lastPad { padding-bottom:10px!important }
+
+.labelReviewLast { padding-top:10px!important} 
+
+.checkLabel { width:85%!important}
+
+/*=====================================*/
+
+
+.mfs2 .mfs-container {
+	position:relative;
+	
+	color:#848484;
+	font-family: 'RobotoRegular';
+	font-size:13px;
+}
+
+
+.mfs4 .mfs-container {
+	position:relative;
+	
+	color:#848484;
+	font-family: 'RobotoRegular';
+	font-size:13px;
+}
+
+.mfs3 .mfs-container {
+	position:relative;
+	
+	color:#848484;
+	font-family: 'RobotoRegular';
+	font-size:13px;
+}
+
+.mfs-container {
+	position:relative;
+	
+	color:#848484;
+	font-family: 'RobotoRegular';
+	font-size:13px;
+}
+.mfs-container a {
+	color: #848484!important;
+}
+.mfs-container select {
+	display:none;
+}
+.mfs-options {
+	position:absolute;
+	width:100%;
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	background:#848484;
+	border:1px solid #eae9e9;
+
+	z-index:1000000000000;
+	background: #ededed;
+	color: #848484;
+	border: 1px solid #dbd9d9;
+	border-top: 0;
+	position: absolute;
+	top: 100%;
+	-webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, .15);
+	-moz-box-shadow: 0 4px 5px rgba(0, 0, 0, .15);
+	-o-box-shadow: 0 4px 5px rgba(0, 0, 0, .15);
+	box-shadow: 0 4px 5px rgba(0, 0, 0, .15);
+	z-index: 1000000000000;
+	width: 99%;
+	margin-top: -1px;
+	/*-webkit-border-radius: 0 0 3px 3px;
+	-moz-border-radius: 0 0 3px 3px;
+	border-radius: 0 0 3px 3px;*/ text-align:left; 
+}
+.mfs-options li a {
+	display:block;
+	padding:2px 5px;
+	text-decoration:none;
+	color:#666666;
+}
+.mfs-optgroup-option {
+	padding-left:10px;
+}
+.mfs-options li.mfs-optgroup {
+	padding:4px 5px;
+	color:#999999;
+}
+.mfs-options li.selected {
+/*background-color:#666666;*/
+}
+.mfs-options li.selected a {
+	color:#ffffff;
+}
+.mfs-options li.active {
+	background-color:#eae9e9;
+}
+a.mfs-selected-option {
+	display:block;
+	padding:11.5px 10px;
+	text-decoration:none;
+	text-align:left;
+	border:1px solid #e4e4e4; text-transform:uppercase;
+	border-radius:0px;
+	color:#848484;
+	white-space:nowrap;
+	overflow:hidden;
+	/*color: #393939!important;*/
+	background: #fff;
+	/*background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e5e5e5), color-stop(0.6, #f6f6f6));
+	background-image: -webkit-linear-gradient(center bottom, #e5e5e5 0%, #f6f6f6 60%);
+	background-image: -moz-linear-gradient(center bottom, #e5e5e5 0%, #f6f6f6 60%);
+	background-image: -o-linear-gradient(bottom, #e5e5e5 0%, #f6f6f6 60%);
+	background-image: -ms-linear-gradient(top, #e5e5e5 0%, #f6f6f6 60%);
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#e5e5e5', endColorstr = '#f6f6f6', GradientType = 0);
+	background-image: linear-gradient(top, #e5e5e5 0%, #f6f6f6 60%);*/
+
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+a.mfs-selected-option span {
+	display:block;
+	position:absolute;
+	top:0;
+	right:0;
+	width:30px;
+	padding:9px 0;
+	/*border:1px solid #cccccc;*/ 
+	/*border-radius:5px;*/
+	border-top-left-radius:0px;
+	border-bottom-left-radius:0px; background:url(../images/arrowd.png)  no-repeat -2px 12px ; 
+	/*background-image:linear-gradient(bottom, rgb(230,230,230) 36%, rgb(244,244,244) 68%);
+	background-image:-o-linear-gradient(bottom, rgb(230,230,230) 36%, rgb(244,244,244) 68%);
+	background-image:-moz-linear-gradient(bottom, rgb(230,230,230) 36%, rgb(244,244,244) 68%);
+	background-image:-webkit-linear-gradient(bottom, rgb(230,230,230) 36%, rgb(244,244,244) 68%);
+	background-image:-ms-linear-gradient(bottom, rgb(230,230,230) 36%, rgb(244,244,244) 68%);*/
+}
+a.mfs-selected-option span:after {
+	display:inline-block;
+	position:absolute;
+	top:14px;
+	left:8px;
+	width:0;
+	height:0;
+	border-top:4px solid #999999;
+	border-right:4px solid transparent;
+	border-left:4px solid transparent;
+	content:""; display:none
+	
+}
+/*===================select box end===========================*/
+
+
+@media only screen and (max-width:680px) and (min-width:200px) { 
+.EmailDoc { background:#eaeaea; border:1px solid #666666; padding:0.5px 4px; text-decoration:none!important; margin:3px 0 0 0}
+.EmailDoc:hover {  background:#dbdada; }
+.checkLabel { width:60%!important}
+.investmentNewForm { width:100%;}
+.investmentNewForm .investWhiteBox .investWhiteBoxIn  { padding:20px 8px 10px 8px }
+.investmentNewForm .formBox .row1 .lftFrm { float:none; width:100%; padding-bottom:10px ; clear:both; height:53px; border:0px solid red}
+.investmentNewForm .formBox .row1 .rhtFrm { float:none;width:100%; padding-bottom:10px ; clear:both; height:42px }
+
+.investmentNewForm .formBox .row1 .lftFrmG { float:none; width:100%; border-right:0px solid #dedede; height:65px;font-family: 'aniversregular'; position:relative }
+.investmentNewForm .formBox .row1 .lftFrmG .input { border:none }
+.investmentNewForm .formBox .row1 .lftFrmG .input__label-content {padding: 10px 10px 10px 0px; }
+.investmentNewForm .formBox .row1 .rhtFrmG { float:none;width:100%; text-align:left  }
+.investmentNewForm .formBox .row1 .rhtFrmG .input__label-content {padding: 10px 10px 10px 0px; }
+.investmentNewForm .formBox .row1 .rhtFrmG .input { border:none }
+.investmentNewForm .formBox .row1 textarea { height:80px; width:100%;  }
+.investmentNewForm select { text-align:left}
+.marital1 { margin-right:0px!important }
+.marital2 { margin-right:0px!important }
+
+.select_gender_male {
+	right:14px!important;
+	}
+.select_gender_female {
+    margin: -34px 79px 14px 10px!important;
+    }
+	
+.investmentNewForm .formBox .row1 .lftFrm2 { float:none; width:100%; }
+.investmentNewForm .formBox .row1 .lftFrm2 .innP { padding:7px 0 10px 0; text-transform:uppercase; text-align:left  }
+.investmentNewForm .formBox .row1 .rhtFrm2 { float:none;width:40%;  }
+.investmentNewForm .formBox .row1 .rhtFrm2 select { border:none  }
+
+.formMnaBdr { border-bottom:1px solid #e4e4e4; padding:0 0 0px 0}
+
+.accoutBx { margin:auto; width:100%; text-align:center}
+.accoutBx .typelft { width:100%; float:none}
+.accoutBx .typelft .typelftinround{ padding:15px 0 10px 18px; text-align:left!important}
+
+.enableBoxRad { position:relative; width:%; margin:auto; }
+.acTyLft { float:left!important; border:0px solid green; width:!important;}
+.acTyRht { float:right!important;  border:0px solid green; width:!important; }
+
+
+.accoutBx .typerht { width:75%; float:none; margin:; border:0px solid red;}
+.accoutBx .typerht .radMn { width:45%; float:left; margin:0 0 10px 0px; clear:; height:25px;}
+
+.accoutBx .typerht .radMn .lftRadsm { width:24px; float:left; margin:0 0 0 0}
+.accoutBx .typerht .radMn .rhtRadsm { width:69px; float:left; margin:0 0 0 5px}
+.accoutBx .typerht .radMn .rhtRadsm .inround{ padding:10px 0 0 0; font-size:10px!important}
+
+.accoutBx2 .typelft { width:100%; float:none; text-transform:uppercase}
+.accoutBx2 .typelft .typelftinround{ padding:7px 0 0 0; text-align:left}
+.accoutBx2 .typerht { width:100%; float:none; margin:0 0 0 0px}
+
+  .radMn { width:auto; float:left; margin:0 8px 0 0}
+  .radMn .lftRadsm { width:13px; float:left; margin:0 0 0 0}
+  .radMn .lftRadsm input { margin:10px 0 0 0}
+  .radMn .rhtRadsm { width:auto; float:left; margin:0 0 0 3px}
+ .radMn .rhtRadsm .inround{ padding:7px 0 0 0}
+
+.numYear { padding-bottom:10px}
+.numYear .lftyear { float:none; width:100%; text-transform:uppercase;border:0px solid  }
+.numYear .lftyear .lftyearI { padding:9px 0 0 0 ; text-align:left }
+.numYear .rtyear { float:none; margin:10px 0 0 0; width:20%}
+
+.formNominee { }
+.formNominee .nomineeLft { float:none; text-align:left }
+.formNominee .nomineeLft .nomineeLftIn { padding:7px 0 0 0}
+.formNominee .nomineeRht { float:none; margin:0 0 0 0px }
+
+.bankstatus{ width:100%; margin:auto;}
+.bankstatus .radMn { width:98%; float:none; margin:0 0 30px 10px; height:8px; clear:both;  }
+.bankstatus .radMn .lftRadsm { width:28px; float:left; margin:0 0 0 0}
+.bankstatus .radMn .rhtRadsm { width:109px; float:left; margin:0 0 0 5px; text-align:left}
+.bankstatus .radMn .rhtRadsm .inround{ padding:7px 0 0 0}
+
+a.mfs-selected-option {
+	display:block;
+	padding:12px 10px;
+}
+.investment_form{ margin-top:0px!important}
+.investmentNewForm{ margin-top:0px!important}
+.smtextr {font-family: 'RobotoLight'; font-size:12px; text-align:center; padding:10px 10px 0 0}
+
+/*=============POP START=================*/
+.recurringWhiteP { padding:25px 10px 0px 10px ; text-align:justify; color:#777; font-size:13px;}  
+.popForm .topBox .rowBoxPopL { float:none ; width:98%; }
+.popForm .topBox .rowBoxPopR { float:none; width:98% }  
+.popForm .topBox .rowBoxPopR .rowBoxPopRIn { padding:0 0 0 0  }
+ .overlaybox3
+            {
+                position: absolute; background:#FFFFFF; border:1px solid #5a5a58;
+                top: 1%;  width:98%; left:0%; -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0; display:none; z-index:1111111111; margin-bottom:50px
+            }
+            
+.closebtn { float:none; padding:10px 10px 0 0; font-size:14px; font-weight:bold; margin: 0 0 0 0; }
+.close-reveal-modal { border:0px solid green; margin:0px 10px 0 0; position:absolute; width:51px; height:51px; background:url(../images/closeimg2.png);transition: all 0.5s ease-in-out; right:0;}
+.close-reveal-modal:hover {  background:url(../images/closeimg.png);transition: all 0.5s ease-in-out;}
+
+.popBoxHd { font-weight:bold; margin:30px 0 0 0; text-align:center ; font-size:16px; color:#5a5a58  ; padding-bottom:20px; background:}   
+
+.popForm .topBox .formInput1 { width:100%; float:none; margin:0 0 20px 0; height:44px;} 
+.popForm .topBox .formInput1 .Poplabel1 { padding:0 0 0 0 } 
+.popForm .topBox .formInput1 .PopInp1 { margin:0 0 20px 0;}
+.popForm .topBox .formInput1 .PopInp1 .input__field_error.focussed1 {  border-top:none; border-left:none; border-right:none; }
+.popForm .topBox .formInput1 .PopInp1 .input  { border-top:none; border-left:none; border-right:none; height:48px }
+.popForm .topBox .formRowM input {
+       margin-bottom: 10px;
+   
+}
+
+.popForm .topBox .formInput2 { width:100%; float:none; margin:0 0 20px 0;} 
+.popForm .topBox .formInput2 .Poplabel1 { padding:0 0 0 0 } 
+.popForm .topBox .formInput2 .PopInp1 .input__field_error.focussed1 {  border-top:none; border-left:none; border-right:none; }
+.popForm .topBox .formInput2 .PopInp1 .input  { border-top:none; border-left:none; border-right:none;}
+
+.popForm .topBox .formInput3 { width:100%; float:none; margin:0 0 20px 0;} 
+.popForm .topBox .formInput3 .Poplabel1 { padding:0 0 0 0 } 
+.popForm .topBox .formInput3 .PopInp1 .input__field_error.focussed1 {  border-top:none; border-left:none; border-right:none; }
+.popForm .topBox .formInput3 .PopInp1 .input  { border-top:none; border-left:none; border-right:none;}
+
+
+/**/
+.popForm .lastBox .formInput1 { width:100%; float:none; margin:0 0 10px 0; height:44px; border:0px solid red} 
+
+
+.popForm .lastBox .formInput2 { width:100%; float:none; margin:0 0 10px 0;} 
+
+
+.popForm .lastBox .formInput3 { width:100%; float:none; margin:0 0 10px 0;} 
+
+
+
+.popForm .lastBox .formInput5 { width:100%; float:none; margin:0 0 10px 0; height:44px; border:0px solid red} 
+.popForm .lastBox .formInput6 { width:100%; float:none; margin:0 0 10px 0; height:44px; border:0px solid red} 
+.popForm .lastBox .formInput7 { width:100%; float:none; margin:0 10px 0 0; height:44px; border:0px solid red} 
+
+.popForm .lastBox .formInput5-01 { width:100%; float:none; margin:0 0 10px 0;height:44px;} 
+.popForm .lastBox .formInput5-02 { width:100%; float:none; margin:0 0 10px 0;height:44px;} 
+.popForm .lastBox .formInput5-03 { width:100%; float:none; margin:0 0 10px 0;height:44px;} 
+
+.popForm .lastBox .formInput1-divide01 { width:100%; float:none; margin:0 0 10px 0;height:44px;} 
+
+.popForm .lastBox .formInput1-divide02 { width:100%; float:none; margin:0 0 10px 0;height:44px;} 
+
+
+.popForm .lastBox .btnPopN { padding-bottom:0}
+.popForm .lastBox .btnPopN .lftCancel { float:left; width:30%; margin-bottom:10px}
+.lftCancel input { height:42px; width:100%; border-radius:0; border:1px solid #000; background:#ededed; padding: 7px 10px 9px 10px; color:#000!important; font-size:15px; font-family: 'RobotoRegular'; background: #fff; text-align:center; cursor:pointer ;transition: all 0.5s ease-in-out; text-transform:uppercase}
+.lftCancel input:hover {background: #dddada;
+    transition: all 0.5s ease-in-out;border:1px solid #000;color:#000!important; font-weight: }	
+
+
+.popForm .lastBox .btnPopN .rhtContine { float:right; width:68%;}
+.rhtContine input { height:42px; width:100%; border-radius:0; border:1px solid #c41c2b;  padding: 7px 10px 9px 10px; color:#fff!important; font-size:15px; font-family: 'RobotoRegular'; background: #c41c2b; text-align:center; cursor:pointer ;transition: all 0.5s ease-in-out;   }
+.rhtContine input:hover {background: #a00e1c;
+    transition: all 0.5s ease-in-out;border:1px solid #a00e1c;color:#fff; }	
+.popForm .lastBox .formRow { padding:0 0 10px 0; border:0px solid red;}	
+.popForm .lastBox .lastHead { width:310px; margin:10px auto 0px auto;  }
+.popForm .lastBox .lastHead .lftHead { float:none  }
+.popForm .lastBox .lastHead .lftHead .lftHeadI { padding:7px 0 0 0; color:#000000   }
+.popForm .lastBox .lastHead .rhtHead { float:none; margin:0 0 0 0; color:#000000 }
+
+
+
+/*=============POP END=================*/
+
+
+
+/*=============LABEL START=================*/
+.labelBox .labelRow {text-align:center}
+.labelBox .labelRow .cln01 { float:none; width:100%; padding-bottom:20px;  }
+.labelBox .labelRow .cln02 { float:none; width:100%; padding-bottom:20px; }
+.labelBox .labelRow .cln03 { float:none; width:100%; }
+.labelBox .labelRow .cln04 { float:none; width:100%;  padding-bottom:20px;}
+.labelBox .labelRow .cln05 { float:none; width:100%; padding-bottom:20px; }
+.labelBox .labelRow .cln06 { float:none; width:100%;}
+.labelBox .labelRow .cln07 { float:; width:100%;  }
+.labelBox .labelRow .cln07Mobile { float:none; width:100%; padding-bottom:20px; }
+.labelBox .labelRow .cln07Address { float:none; width:100%; }
+
+
+.labelBox .labelRow .cln08 { float:none; width:100%; padding-bottom:20px;}
+.labelBox .labelRow .cln09 { float:none; width:100%; padding-bottom:20px;}
+.labelBox .labelRow .cln10 { float:none; width:100%; }
+.labelBox .labelRow .cln11 { float:none; width:100%; }
+.labelBox .labelRow .cln12 { float:none; width:100%; }
+.labelcheckLft { float:left; margin:0 4px 0 0; width:16px;}
+.labelcheckLft input { margin:7px 0 0 0; }
+.labelcheckRht { float:left; margin:0 0 0 0; width:90%; border:0px solid red;}
+.blueRight { float:right; right:5px; margin:-5px 0 0 0; position:absolute;color:#1675cf;font-weight:normal; font-size:11px; }
+.blueRight a { color:#1675cf; text-decoration:none; font-weight:normal; font-size:11px; }
+
+/*==============LABEL END================*/
+.lineHMob { line-height:12px;}
+
+}
+
+@media only screen and (max-width:800px) and (min-width:480px) { 
+
+
+
+.labelBox .labelRow {text-align:left}
+.labelBox .labelRow .cln01 { float:left; width:26%; padding-bottom:20px;  margin-right:10px  }
+.labelBox .labelRow .cln02 { float:left; width:26%; padding-bottom:20px;margin-right:10px }
+.labelBox .labelRow .cln03 { float:left; width:36%;margin-right:10px }
+.labelBox .labelRow .cln04 { float:left; width:32%;  padding-bottom:20px;margin-right:10px}
+.labelBox .labelRow .cln05 { float:left; width:26%; padding-bottom:20px; margin-right:10px}
+.labelBox .labelRow .cln06 { float:left; width:26%; margin-right:10px}
+.labelBox .labelRow .cln07 { float:; width:100%;  }
+.labelBox .labelRow .cln07Mobile { float:left; width:26%; padding-bottom:20px; margin-right:10px}
+.labelBox .labelRow .cln07Address { float:left; width:65%; margin-right:10px}
+
+
+.labelBox .labelRow .cln08 { float:left; width:31%; padding-bottom:20px; margin-right:10px}
+.labelBox .labelRow .cln09 { float:left; width:26%; padding-bottom:20px; margin-right:10px}
+.labelBox .labelRow .cln10 { float:left; width:26%; margin-right:10px}
+.labelBox .labelRow .cln11 { float:left; width:46%;margin-right:10px }
+.labelBox .labelRow .cln12 { float:left; width:46%; margin-right:10px}
+
+}
+
+@media only screen and (max-width:800px) and (min-width:200px) { 
+#done01, #done02, #edit02, #edit01 { display:block; background:#eaeaea; border:1px solid #666666; padding:3px 3px; text-decoration:none; font-size:10px}
+#done01:hover , #done02:hover , #edit02:hover , #edit01:hover  {  background:#dbdada; }
+.mobWidth{ width:70%!important; border:0px solid red; float:left}
+}
+
+@media only screen and (max-width:980px) and (min-width:680px) { 
+ .overlaybox3
+            {
+                 left:3%;
+		     }
+.closebtn { float:none; padding:10px 10px 0 0; font-size:14px; font-weight:bold; margin: 0 0 0 0; }
+.close-reveal-modal { border:0px solid green; margin:0px 10px 0 0; position:absolute; width:51px; height:51px; background:url(../images/closeimg2.png);transition: all 0.5s ease-in-out; right:0;}			 
+			 
+}
+
+@media only screen and (max-width:1100px) and (min-width:980px) { 
+ .overlaybox3
+            {
+                 left:15%;
+		     }
+.closebtn { float:none; padding:10px 10px 0 0; font-size:14px; font-weight:bold; margin: 0 0 0 0; }
+.close-reveal-modal { border:0px solid green; margin:0px 10px 0 0; position:absolute; width:51px; height:51px; background:url(../images/closeimg2.png);transition: all 0.5s ease-in-out; right:0;}
+			 
+}
+
+.seperate { padding:10px 0 0 0}
+
+
+

@@ -1,0 +1,403 @@
+[22-Jul-2016 04:59:54 America/Detroit] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32 bytes) in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/style.cls.php on line 737
+[22-Jul-2016 05:00:07 America/Detroit] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32 bytes) in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/style.cls.php on line 748
+[25-Jul-2016 04:48:07 America/Detroit] PHP Fatal error:  Cannot use object of type stdClass as array in /home/pearlsar/public_html/hirco/application/controllers/admin.php on line 88
+[25-Jul-2016 04:48:09 America/Detroit] PHP Fatal error:  Cannot use object of type stdClass as array in /home/pearlsar/public_html/hirco/application/controllers/admin.php on line 88
+[25-Jul-2016 04:48:10 America/Detroit] PHP Fatal error:  Cannot use object of type stdClass as array in /home/pearlsar/public_html/hirco/application/controllers/admin.php on line 88
+[25-Jul-2016 04:48:11 America/Detroit] PHP Fatal error:  Cannot use object of type stdClass as array in /home/pearlsar/public_html/hirco/application/controllers/admin.php on line 88
+[25-Jul-2016 04:48:55 America/Detroit] PHP Fatal error:  Cannot use object of type stdClass as array in /home/pearlsar/public_html/hirco/application/controllers/admin.php on line 88
+[25-Jul-2016 04:48:57 America/Detroit] PHP Fatal error:  Cannot use object of type stdClass as array in /home/pearlsar/public_html/hirco/application/controllers/admin.php on line 88
+[25-Jul-2016 04:48:57 America/Detroit] PHP Fatal error:  Cannot use object of type stdClass as array in /home/pearlsar/public_html/hirco/application/controllers/admin.php on line 88
+[25-Jul-2016 04:49:19 America/Detroit] PHP Fatal error:  Cannot use object of type stdClass as array in /home/pearlsar/public_html/hirco/application/controllers/admin.php on line 88
+[25-Jul-2016 04:49:43 America/Detroit] PHP Fatal error:  Cannot use object of type stdClass as array in /home/pearlsar/public_html/hirco/application/controllers/admin.php on line 88
+[25-Jul-2016 04:53:00 America/Detroit] PHP Fatal error:  Cannot use object of type stdClass as array in /home/pearlsar/public_html/hirco/application/controllers/admin.php on line 88
+[25-Jul-2016 04:53:12 America/Detroit] PHP Fatal error:  Cannot use object of type stdClass as array in /home/pearlsar/public_html/hirco/application/controllers/admin.php on line 88
+[26-Jul-2016 05:26:24 America/Detroit] PHP Parse error:  syntax error, unexpected '/' in /home/pearlsar/public_html/hirco/application/views/admin/add_item_label.php on line 27
+[26-Jul-2016 05:26:26 America/Detroit] PHP Parse error:  syntax error, unexpected '/' in /home/pearlsar/public_html/hirco/application/views/admin/add_item_label.php on line 27
+[26-Jul-2016 05:26:39 America/Detroit] PHP Parse error:  syntax error, unexpected '/' in /home/pearlsar/public_html/hirco/application/views/admin/add_item_label.php on line 27
+[26-Jul-2016 05:26:40 America/Detroit] PHP Parse error:  syntax error, unexpected '/' in /home/pearlsar/public_html/hirco/application/views/admin/add_item_label.php on line 27
+[26-Jul-2016 05:26:50 America/Detroit] PHP Parse error:  syntax error, unexpected '/' in /home/pearlsar/public_html/hirco/application/views/admin/add_item_label.php on line 27
+[26-Jul-2016 05:27:31 America/Detroit] PHP Fatal error:  Cannot use object of type stdClass as array in /home/pearlsar/public_html/hirco/application/views/admin/add_item_label.php on line 26
+[26-Jul-2016 05:27:37 America/Detroit] PHP Fatal error:  Cannot use object of type stdClass as array in /home/pearlsar/public_html/hirco/application/views/admin/add_item_label.php on line 26
+[29-Jul-2016 06:17:12 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/hirco/application/controllers/admin.php(770): DOMPDF->render()
+#3 [internal function]: Admin->print_label('0700011623')
+#4 /home/pearlsar/public_html/hirco/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/hirco/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[29-Jul-2016 06:17:28 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/hirco/application/controllers/admin.php(770): DOMPDF->render()
+#3 [internal function]: Admin->print_label('0700011623')
+#4 /home/pearlsar/public_html/hirco/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/hirco/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[29-Jul-2016 06:17:33 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/hirco/application/controllers/admin.php(770): DOMPDF->render()
+#3 [internal function]: Admin->print_label('0700011623')
+#4 /home/pearlsar/public_html/hirco/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/hirco/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[29-Jul-2016 06:17:48 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/hirco/application/controllers/admin.php(770): DOMPDF->render()
+#3 [internal function]: Admin->print_label('0700011623')
+#4 /home/pearlsar/public_html/hirco/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/hirco/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[29-Jul-2016 06:17:53 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/hirco/application/controllers/admin.php(770): DOMPDF->render()
+#3 [internal function]: Admin->print_label('0700011623')
+#4 /home/pearlsar/public_html/hirco/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/hirco/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[29-Jul-2016 06:17:54 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/hirco/application/controllers/admin.php(770): DOMPDF->render()
+#3 [internal function]: Admin->print_label('0700011623')
+#4 /home/pearlsar/public_html/hirco/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/hirco/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[29-Jul-2016 06:18:10 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/hirco/application/controllers/admin.php(770): DOMPDF->render()
+#3 [internal function]: Admin->print_label('0700011623')
+#4 /home/pearlsar/public_html/hirco/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/hirco/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[29-Jul-2016 06:18:32 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/hirco/application/controllers/admin.php(770): DOMPDF->render()
+#3 [internal function]: Admin->print_label('0700011623')
+#4 /home/pearlsar/public_html/hirco/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/hirco/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[29-Jul-2016 06:18:40 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/hirco/application/controllers/admin.php(770): DOMPDF->render()
+#3 [internal function]: Admin->print_label('0700011623')
+#4 /home/pearlsar/public_html/hirco/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/hirco/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[29-Jul-2016 06:18:42 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/hirco/application/controllers/admin.php(770): DOMPDF->render()
+#3 [internal function]: Admin->print_label('0700011623')
+#4 /home/pearlsar/public_html/hirco/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/hirco/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[29-Jul-2016 06:18:54 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/hirco/application/controllers/admin.php(770): DOMPDF->render()
+#3 [internal function]: Admin->print_label('0700011623')
+#4 /home/pearlsar/public_html/hirco/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/hirco/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[29-Jul-2016 06:19:00 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/hirco/application/controllers/admin.php(770): DOMPDF->render()
+#3 [internal function]: Admin->print_label('0700011623')
+#4 /home/pearlsar/public_html/hirco/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/hirco/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[29-Jul-2016 06:19:01 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/hirco/application/controllers/admin.php(770): DOMPDF->render()
+#3 [internal function]: Admin->print_label('0700011623')
+#4 /home/pearlsar/public_html/hirco/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/hirco/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[29-Jul-2016 06:19:06 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/hirco/application/controllers/admin.php(770): DOMPDF->render()
+#3 [internal function]: Admin->print_label('0700011623')
+#4 /home/pearlsar/public_html/hirco/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/hirco/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[29-Jul-2016 06:19:10 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/hirco/application/controllers/admin.php(770): DOMPDF->render()
+#3 [internal function]: Admin->print_label('0700011623')
+#4 /home/pearlsar/public_html/hirco/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/hirco/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[29-Jul-2016 06:19:41 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/hirco/application/controllers/admin.php(770): DOMPDF->render()
+#3 [internal function]: Admin->print_label('0700011623')
+#4 /home/pearlsar/public_html/hirco/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/hirco/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[01-Aug-2016 07:05:14 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/hirco/application/controllers/admin.php(770): DOMPDF->render()
+#3 [internal function]: Admin->print_label('0700011623')
+#4 /home/pearlsar/public_html/hirco/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/hirco/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[01-Aug-2016 09:50:50 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/hirco/application/controllers/admin.php(770): DOMPDF->render()
+#3 [internal function]: Admin->print_label('0700011623')
+#4 /home/pearlsar/public_html/hirco/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/hirco/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[01-Aug-2016 10:40:30 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/hirco/application/controllers/admin.php(770): DOMPDF->render()
+#3 [internal function]: Admin->print_label('0700011623')
+#4 /home/pearlsar/public_html/hirco/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/hirco/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[01-Aug-2016 10:40:30 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/hirco/application/controllers/admin.php(770): DOMPDF->render()
+#3 [internal function]: Admin->print_label('0700011623')
+#4 /home/pearlsar/public_html/hirco/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/hirco/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[09-Aug-2016 08:48:58 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/hirco/application/controllers/admin.php(199): DOMPDF->render()
+#3 [internal function]: Admin->label('0700011620')
+#4 /home/pearlsar/public_html/hirco/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/hirco/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[09-Aug-2016 08:48:58 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/hirco/application/controllers/admin.php(199): DOMPDF->render()
+#3 [internal function]: Admin->label('0700011620')
+#4 /home/pearlsar/public_html/hirco/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/hirco/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[09-Aug-2016 08:49:04 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/hirco/application/controllers/admin.php(199): DOMPDF->render()
+#3 [internal function]: Admin->label('0700011620')
+#4 /home/pearlsar/public_html/hirco/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/hirco/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[09-Aug-2016 08:49:05 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/hirco/application/controllers/admin.php(199): DOMPDF->render()
+#3 [internal function]: Admin->label('0700011620')
+#4 /home/pearlsar/public_html/hirco/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/hirco/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[09-Aug-2016 09:04:50 America/Detroit] PHP Fatal error:  Call to a member function get_cellmap() on a non-object in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/table_cell_frame_reflower.cls.php on line 30
+[09-Aug-2016 09:04:50 America/Detroit] PHP Fatal error:  Call to a member function get_cellmap() on a non-object in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/table_cell_frame_reflower.cls.php on line 30
+[09-Aug-2016 09:04:51 America/Detroit] PHP Fatal error:  Call to a member function get_cellmap() on a non-object in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/table_cell_frame_reflower.cls.php on line 30
+[09-Aug-2016 09:04:53 America/Detroit] PHP Fatal error:  Call to a member function get_cellmap() on a non-object in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/table_cell_frame_reflower.cls.php on line 30
+[09-Aug-2016 09:04:59 America/Detroit] PHP Fatal error:  Call to a member function get_cellmap() on a non-object in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/table_cell_frame_reflower.cls.php on line 30
+[09-Aug-2016 09:05:09 America/Detroit] PHP Fatal error:  Call to a member function get_cellmap() on a non-object in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/table_cell_frame_reflower.cls.php on line 30
+[09-Aug-2016 09:05:35 America/Detroit] PHP Fatal error:  Call to a member function get_cellmap() on a non-object in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/table_cell_frame_reflower.cls.php on line 30
+[09-Aug-2016 09:05:36 America/Detroit] PHP Fatal error:  Call to a member function get_cellmap() on a non-object in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/table_cell_frame_reflower.cls.php on line 30
+[09-Aug-2016 09:05:42 America/Detroit] PHP Fatal error:  Call to a member function get_cellmap() on a non-object in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/table_cell_frame_reflower.cls.php on line 30
+[09-Aug-2016 09:05:57 America/Detroit] PHP Fatal error:  Call to a member function get_cellmap() on a non-object in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/table_cell_frame_reflower.cls.php on line 30
+[10-Aug-2016 07:47:14 America/Detroit] PHP Fatal error:  Class 'Font' not found in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/font_metrics.cls.php on line 347
+[10-Aug-2016 07:47:16 America/Detroit] PHP Fatal error:  Class 'Font' not found in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/font_metrics.cls.php on line 347
+[10-Aug-2016 07:47:20 America/Detroit] PHP Fatal error:  Class 'Font' not found in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/font_metrics.cls.php on line 347
+[10-Aug-2016 07:49:26 America/Detroit] PHP Fatal error:  Class 'Font' not found in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/font_metrics.cls.php on line 347
+[10-Aug-2016 07:49:28 America/Detroit] PHP Fatal error:  Class 'Font' not found in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/font_metrics.cls.php on line 347
+[10-Aug-2016 07:49:58 America/Detroit] PHP Fatal error:  Class 'Font' not found in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/font_metrics.cls.php on line 347
+[10-Aug-2016 07:50:55 America/Detroit] PHP Fatal error:  Class 'Font' not found in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/font_metrics.cls.php on line 347
+[10-Aug-2016 07:50:56 America/Detroit] PHP Fatal error:  Class 'Font' not found in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/font_metrics.cls.php on line 347
+[10-Aug-2016 08:15:38 America/Detroit] PHP Fatal error:  Class 'Font' not found in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/font_metrics.cls.php on line 347
+[10-Aug-2016 08:15:38 America/Detroit] PHP Fatal error:  Class 'Font' not found in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/font_metrics.cls.php on line 347
+[10-Aug-2016 08:15:44 America/Detroit] PHP Fatal error:  Class 'Font' not found in /home/pearlsar/public_html/hirco/application/libraries/dompdf/include/font_metrics.cls.php on line 347
+[10-Aug-2016 09:51:06 America/Detroit] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 262144000 bytes) in /home/pearlsar/public_html/hirco/application/views/admin/search_label.php on line 87
+[10-Aug-2016 09:51:07 America/Detroit] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 262144000 bytes) in /home/pearlsar/public_html/hirco/application/views/admin/search_label.php on line 87
+[10-Aug-2016 09:58:18 America/Detroit] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 262406144 bytes) in /home/pearlsar/public_html/hirco/application/views/admin/search_label.php on line 88
+[10-Aug-2016 09:58:19 America/Detroit] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 262144000 bytes) in /home/pearlsar/public_html/hirco/application/views/admin/search_label.php on line 88
+[10-Aug-2016 11:52:29 America/Detroit] PHP Parse error:  syntax error, unexpected '}' in /home/pearlsar/public_html/hirco/application/views/admin/search_label.php on line 32
+[10-Aug-2016 11:52:29 America/Detroit] PHP Parse error:  syntax error, unexpected '}' in /home/pearlsar/public_html/hirco/application/views/admin/search_label.php on line 32
+[11-Aug-2016 03:41:00 America/Detroit] PHP Parse error:  syntax error, unexpected end of file in /home/pearlsar/public_html/hirco/application/views/admin/search_label.php on line 113
+[11-Aug-2016 03:41:00 America/Detroit] PHP Parse error:  syntax error, unexpected end of file in /home/pearlsar/public_html/hirco/application/views/admin/search_label.php on line 113
+[11-Aug-2016 03:41:06 America/Detroit] PHP Parse error:  syntax error, unexpected end of file in /home/pearlsar/public_html/hirco/application/views/admin/search_label.php on line 113
+[11-Aug-2016 04:30:29 America/Detroit] PHP Parse error:  syntax error, unexpected ''email'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/pearlsar/public_html/hirco/application/controllers/admin.php on line 399
+[11-Aug-2016 04:30:32 America/Detroit] PHP Parse error:  syntax error, unexpected ''email'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/pearlsar/public_html/hirco/application/controllers/admin.php on line 399
+[11-Aug-2016 04:30:49 America/Detroit] PHP Parse error:  syntax error, unexpected ''email'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/pearlsar/public_html/hirco/application/controllers/admin.php on line 399
+[11-Aug-2016 04:30:54 America/Detroit] PHP Parse error:  syntax error, unexpected ''email'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/pearlsar/public_html/hirco/application/controllers/admin.php on line 399
+[11-Aug-2016 04:30:59 America/Detroit] PHP Parse error:  syntax error, unexpected ''email'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/pearlsar/public_html/hirco/application/controllers/admin.php on line 399
+[11-Aug-2016 04:44:44 America/Detroit] PHP Parse error:  syntax error, unexpected 'print_r' (T_STRING), expecting ',' or ';' in /home/pearlsar/public_html/hirco/application/controllers/admin.php on line 190
+[11-Aug-2016 04:44:45 America/Detroit] PHP Parse error:  syntax error, unexpected 'print_r' (T_STRING), expecting ',' or ';' in /home/pearlsar/public_html/hirco/application/controllers/admin.php on line 190
+[11-Aug-2016 04:57:00 America/Detroit] PHP Fatal error:  Unsupported operand types in /home/pearlsar/public_html/hirco/application/views/admin/search_label.php on line 31
+[11-Aug-2016 04:57:00 America/Detroit] PHP Fatal error:  Unsupported operand types in /home/pearlsar/public_html/hirco/application/views/admin/search_label.php on line 31
+[11-Aug-2016 04:57:06 America/Detroit] PHP Fatal error:  Unsupported operand types in /home/pearlsar/public_html/hirco/application/views/admin/search_label.php on line 31
+[11-Aug-2016 04:57:36 America/Detroit] PHP Fatal error:  Unsupported operand types in /home/pearlsar/public_html/hirco/application/views/admin/search_label.php on line 31
+[11-Aug-2016 05:00:02 America/Detroit] PHP Parse error:  syntax error, unexpected end of file in /home/pearlsar/public_html/hirco/application/views/admin/search_label.php on line 110
+[11-Aug-2016 05:00:05 America/Detroit] PHP Parse error:  syntax error, unexpected end of file in /home/pearlsar/public_html/hirco/application/views/admin/search_label.php on line 110
+[11-Aug-2016 05:00:31 America/Detroit] PHP Parse error:  syntax error, unexpected end of file in /home/pearlsar/public_html/hirco/application/views/admin/search_label.php on line 110
+[11-Aug-2016 05:00:42 America/Detroit] PHP Parse error:  syntax error, unexpected end of file in /home/pearlsar/public_html/hirco/application/views/admin/search_label.php on line 110
+[11-Aug-2016 06:07:32 America/Detroit] PHP Parse error:  syntax error, unexpected end of file in /home/pearlsar/public_html/hirco/application/views/admin/search_label.php on line 110
+[11-Aug-2016 06:09:53 America/Detroit] PHP Parse error:  syntax error, unexpected end of file in /home/pearlsar/public_html/hirco/application/views/admin/search_label.php on line 110
+[11-Aug-2016 06:10:24 America/Detroit] PHP Parse error:  syntax error, unexpected end of file in /home/pearlsar/public_html/hirco/application/views/admin/search_label.php on line 110
+[11-Aug-2016 06:10:29 America/Detroit] PHP Parse error:  syntax error, unexpected end of file in /home/pearlsar/public_html/hirco/application/views/admin/search_label.php on line 110
+[11-Aug-2016 06:10:30 America/Detroit] PHP Parse error:  syntax error, unexpected end of file in /home/pearlsar/public_html/hirco/application/views/admin/search_label.php on line 110
+[11-Aug-2016 06:11:24 America/Detroit] PHP Parse error:  syntax error, unexpected 'print_r' (T_STRING), expecting ',' or ';' in /home/pearlsar/public_html/hirco/application/views/admin/search_label.php on line 44
+[11-Aug-2016 06:11:26 America/Detroit] PHP Parse error:  syntax error, unexpected 'print_r' (T_STRING), expecting ',' or ';' in /home/pearlsar/public_html/hirco/application/views/admin/search_label.php on line 44
+[11-Aug-2016 06:16:51 America/Detroit] PHP Parse error:  syntax error, unexpected end of file in /home/pearlsar/public_html/hirco/application/views/admin/search_label.php on line 114
+[11-Aug-2016 06:33:31 America/Detroit] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/pearlsar/public_html/hirco/application/views/admin/search_label.php on line 31
+[11-Aug-2016 08:42:56 America/Detroit] PHP Parse error:  syntax error, unexpected '}' in /home/pearlsar/public_html/hirco/application/views/admin/certificate.php on line 200
+[11-Aug-2016 09:22:23 America/Detroit] PHP Parse error:  syntax error, unexpected ')' in /home/pearlsar/public_html/hirco/application/controllers/admin.php on line 171
+[11-Aug-2016 09:23:15 America/Detroit] PHP Parse error:  syntax error, unexpected ',' in /home/pearlsar/public_html/hirco/application/controllers/admin.php on line 171
+[12-Aug-2016 06:05:34 America/Detroit] PHP Parse error:  syntax error, unexpected '{' in /home/pearlsar/public_html/hirco/application/views/admin/certificate.php on line 30
+[12-Aug-2016 06:05:39 America/Detroit] PHP Parse error:  syntax error, unexpected '{' in /home/pearlsar/public_html/hirco/application/views/admin/certificate.php on line 30
+[12-Aug-2016 06:06:45 America/Detroit] PHP Parse error:  syntax error, unexpected '{' in /home/pearlsar/public_html/hirco/application/views/admin/certificate.php on line 30
+[12-Aug-2016 06:07:44 America/Detroit] PHP Parse error:  syntax error, unexpected '{' in /home/pearlsar/public_html/hirco/application/views/admin/certificate.php on line 30
+[12-Aug-2016 06:08:37 America/Detroit] PHP Parse error:  syntax error, unexpected '{' in /home/pearlsar/public_html/hirco/application/views/admin/certificate.php on line 28
+[12-Aug-2016 06:09:36 America/Detroit] PHP Parse error:  syntax error, unexpected '{' in /home/pearlsar/public_html/hirco/application/views/admin/certificate.php on line 28
+[12-Aug-2016 06:09:55 America/Detroit] PHP Parse error:  syntax error, unexpected '{' in /home/pearlsar/public_html/hirco/application/views/admin/certificate.php on line 28
+[12-Aug-2016 06:09:56 America/Detroit] PHP Parse error:  syntax error, unexpected '{' in /home/pearlsar/public_html/hirco/application/views/admin/certificate.php on line 28
+[12-Aug-2016 06:09:57 America/Detroit] PHP Parse error:  syntax error, unexpected '{' in /home/pearlsar/public_html/hirco/application/views/admin/certificate.php on line 28
+[12-Aug-2016 06:09:57 America/Detroit] PHP Parse error:  syntax error, unexpected '{' in /home/pearlsar/public_html/hirco/application/views/admin/certificate.php on line 28
+[12-Aug-2016 06:09:57 America/Detroit] PHP Parse error:  syntax error, unexpected '{' in /home/pearlsar/public_html/hirco/application/views/admin/certificate.php on line 28
+[12-Aug-2016 06:09:57 America/Detroit] PHP Parse error:  syntax error, unexpected '{' in /home/pearlsar/public_html/hirco/application/views/admin/certificate.php on line 28
+[12-Aug-2016 06:09:57 America/Detroit] PHP Parse error:  syntax error, unexpected '{' in /home/pearlsar/public_html/hirco/application/views/admin/certificate.php on line 28
+[12-Aug-2016 06:09:57 America/Detroit] PHP Parse error:  syntax error, unexpected '{' in /home/pearlsar/public_html/hirco/application/views/admin/certificate.php on line 28
+[12-Aug-2016 06:09:57 America/Detroit] PHP Parse error:  syntax error, unexpected '{' in /home/pearlsar/public_html/hirco/application/views/admin/certificate.php on line 28
+[12-Aug-2016 06:09:57 America/Detroit] PHP Parse error:  syntax error, unexpected '{' in /home/pearlsar/public_html/hirco/application/views/admin/certificate.php on line 28
+[12-Aug-2016 06:12:43 America/Detroit] PHP Parse error:  syntax error, unexpected '{' in /home/pearlsar/public_html/hirco/application/views/admin/certificate.php on line 28
+[12-Aug-2016 06:12:46 America/Detroit] PHP Parse error:  syntax error, unexpected '{' in /home/pearlsar/public_html/hirco/application/views/admin/certificate.php on line 28
+[12-Aug-2016 06:13:13 America/Detroit] PHP Parse error:  syntax error, unexpected '{' in /home/pearlsar/public_html/hirco/application/views/admin/certificate.php on line 28
+[17-Sep-2016 03:51:36 America/Detroit] PHP Parse error:  syntax error, unexpected '}' in /home/pearlsar/public_html/hirco/application/views/admin/filter.php on line 77
+[17-Sep-2016 03:51:39 America/Detroit] PHP Parse error:  syntax error, unexpected '}' in /home/pearlsar/public_html/hirco/application/views/admin/filter.php on line 77
+[26-Sep-2016 05:21:01 America/Detroit] PHP Parse error:  syntax error, unexpected ')' in /home/pearlsar/public_html/hirco/application/controllers/admin.php on line 173
+[26-Sep-2016 05:21:55 America/Detroit] PHP Parse error:  syntax error, unexpected ')' in /home/pearlsar/public_html/hirco/application/controllers/admin.php on line 173
+[26-Sep-2016 05:21:58 America/Detroit] PHP Parse error:  syntax error, unexpected ')' in /home/pearlsar/public_html/hirco/application/controllers/admin.php on line 173
+[25-Oct-2016 06:58:43 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/application/controllers/admin.php(914): DOMPDF->render()
+#3 [internal function]: Admin->invoice()
+#4 /home/pearlsar/public_html/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[25-Oct-2016 07:05:51 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/application/controllers/admin.php(914): DOMPDF->render()
+#3 [internal function]: Admin->invoice()
+#4 /home/pearlsar/public_html/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[25-Oct-2016 07:05:51 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/application/controllers/admin.php(914): DOMPDF->render()
+#3 [internal function]: Admin->invoice()
+#4 /home/pearlsar/public_html/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[25-Oct-2016 07:10:13 America/Detroit] PHP Fatal error:  Uncaught exception 'DOMPDF_Exception' with message 'Requested HTML document contains no data.' in /home/pearlsar/public_html/application/libraries/dompdf/include/frame_tree.cls.php:122
+Stack trace:
+#0 /home/pearlsar/public_html/application/libraries/dompdf/include/dompdf.cls.php(676): Frame_Tree->build_tree()
+#1 /home/pearlsar/public_html/application/libraries/dompdf/include/dompdf.cls.php(846): DOMPDF->_process_html()
+#2 /home/pearlsar/public_html/application/controllers/admin.php(914): DOMPDF->render()
+#3 [internal function]: Admin->invoice()
+#4 /home/pearlsar/public_html/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#5 /home/pearlsar/public_html/index.php(202): require_once('/home/pearlsar/...')
+#6 {main}
+  thrown in /home/pearlsar/public_html/application/libraries/dompdf/include/frame_tree.cls.php on line 122
+[26-Oct-2016 05:17:26 America/Detroit] PHP Parse error:  syntax error, unexpected end of file in /home/pearlsar/public_html/application/controllers/admin.php on line 385
+[26-Oct-2016 05:39:42 America/Detroit] PHP Parse error:  syntax error, unexpected end of file in /home/pearlsar/public_html/application/controllers/admin.php on line 385
+[26-Oct-2016 05:48:02 America/Detroit] PHP Fatal error:  Cannot use object of type stdClass as array in /home/pearlsar/public_html/application/controllers/admin.php on line 860
+[26-Oct-2016 05:48:03 America/Detroit] PHP Fatal error:  Cannot use object of type stdClass as array in /home/pearlsar/public_html/application/controllers/admin.php on line 860
+[26-Oct-2016 05:48:05 America/Detroit] PHP Fatal error:  Cannot use object of type stdClass as array in /home/pearlsar/public_html/application/controllers/admin.php on line 860
+[26-Oct-2016 05:50:03 America/Detroit] PHP Fatal error:  Cannot use object of type stdClass as array in /home/pearlsar/public_html/application/controllers/admin.php on line 860
+[26-Oct-2016 06:01:17 America/Detroit] PHP Parse error:  syntax error, unexpected ')' in /home/pearlsar/public_html/application/controllers/admin.php on line 856
+[26-Oct-2016 06:01:19 America/Detroit] PHP Parse error:  syntax error, unexpected ')' in /home/pearlsar/public_html/application/controllers/admin.php on line 856
+[26-Oct-2016 06:03:48 America/Detroit] PHP Parse error:  syntax error, unexpected end of file in /home/pearlsar/public_html/application/controllers/admin.php on line 385
+[27-Oct-2016 04:47:24 America/Detroit] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/pearlsar/public_html/application/controllers/admin.php on line 869
+[27-Oct-2016 04:47:26 America/Detroit] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/pearlsar/public_html/application/controllers/admin.php on line 869
+[27-Oct-2016 04:48:24 America/Detroit] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/pearlsar/public_html/application/controllers/admin.php on line 869
+[27-Oct-2016 05:19:25 America/Detroit] PHP Fatal error:  Cannot use object of type stdClass as array in /home/pearlsar/public_html/application/controllers/admin.php on line 859
+[27-Oct-2016 05:22:01 America/Detroit] PHP Fatal error:  Cannot use object of type stdClass as array in /home/pearlsar/public_html/application/controllers/admin.php on line 859
+[01-Nov-2016 06:03:35 America/Detroit] PHP Parse error:  syntax error, unexpected end of file in /home/pearlsar/public_html/application/controllers/admin.php on line 385
+[08-Dec-2016 08:19:31 America/Detroit] PHP Parse error:  syntax error, unexpected ')', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/pearlsar/public_html/application/views/admin/before_bill_form.php on line 67
+[08-Dec-2016 08:19:34 America/Detroit] PHP Parse error:  syntax error, unexpected ')', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/pearlsar/public_html/application/views/admin/before_bill_form.php on line 67
+[08-Dec-2016 08:19:41 America/Detroit] PHP Parse error:  syntax error, unexpected ')', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/pearlsar/public_html/application/views/admin/before_bill_form.php on line 67
+[08-Dec-2016 08:20:13 America/Detroit] PHP Parse error:  syntax error, unexpected ')', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/pearlsar/public_html/application/views/admin/before_bill_form.php on line 67
+[08-Dec-2016 08:20:44 America/Detroit] PHP Parse error:  syntax error, unexpected '$alue' (T_VARIABLE), expecting ',' or ';' in /home/pearlsar/public_html/application/views/admin/before_bill_form.php on line 69
+[08-Dec-2016 08:20:45 America/Detroit] PHP Parse error:  syntax error, unexpected '$alue' (T_VARIABLE), expecting ',' or ';' in /home/pearlsar/public_html/application/views/admin/before_bill_form.php on line 69
+[08-Dec-2016 08:20:50 America/Detroit] PHP Parse error:  syntax error, unexpected '$alue' (T_VARIABLE), expecting ',' or ';' in /home/pearlsar/public_html/application/views/admin/before_bill_form.php on line 69

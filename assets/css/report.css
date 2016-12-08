@@ -1,0 +1,1233 @@
+/*Sammer Pathak */
+
+ 
+
+.rs { font-size: 15px;}
+
+ 
+
+.investBlock .price { xtext-align: left; font-size:28px; color:#333; font-family:Arial, Helvetica, sans-serif; font-weight: bold; line-height: 34px}
+
+ 
+
+.plIncrease.amt { font-size:28px; }
+
+.plDecrease.amt { font-size:28px; }
+
+ 
+
+.chart .fund-dtl1 tr:hover td,.chart .fund-dtl2 tr:hover td { background:#dddada}
+
+ 
+
+.chart .fund-dtl1 tr td, .chart .fund-dtl2 tr td { border-bottom:1px solid #fff; border-right:1px solid #fff; vertical-align:middle; padding:.8em .8em; background:#ededed; text-align:center; transition:.5s ease all}
+
+.fund-heading {font-family: "robotobold"; font-size: 18px; font-weight: normal; color: #333}
+
+.report-panel a { background:#999999; border-radius:4px; padding:.5em .9em; 
+  color:#fff; font-weight:bold; font-family:Arial, Helvetica, sans-serif; 
+  transition:.5s ease all; margin-right: 5px}
+
+.btn-red {  background: #c71c2c; padding: 3% 0px; line-height: 20px; color: #fff; font-size: 18px; display: inline-block; width: 100%;
+
+text-align: center; border-radius: 4px;}
+
+.dtail-btn {margin:8% auto 0; width: 40%;}
+
+.fund-dtl1 tr:last-child td, .fund-dtl2 tr:last-child td { font-size: 15px;}
+
+ 
+
+.fixme { z-index:1;}
+
+ 
+
+.fixme .chart { margin-top:0}
+
+ 
+
+.fixed {
+
+  position:fixed;
+
+  top:0;
+
+  width:972px;
+
+  max-width: 998px;
+
+}
+
+ 
+
+.static { position: static; top:0}
+
+ 
+
+.fund-dtl tr:last-child td { font-size:15px}
+
+.red_add {
+
+  color: red !important;
+
+}
+
+ 
+
+/*End */
+
+ 
+
+ 
+
+ 
+
+/************fonts*************/
+
+@font-face {
+
+                font-family: 'aniversitalic';
+
+    src: local('Anivers Italic'), local('Anivers_Italic'), url(../fonts/anivers_italic-webfont.woff) format('woff');
+
+    font-weight: 300;
+
+    font-style: normal;
+
+}
+
+@font-face {
+
+    font-family: 'aniversregular';
+
+    src: local('Anivers Regular'), local('Anivers_Regular'), url(../fonts/Anivers_Regular-webfont.woff) format('woff');
+
+    font-weight: 400;
+
+    font-style: normal;
+
+}
+
+@font-face {
+
+                font-family: 'aniversbold';
+
+    src: local('Anivers Bold'), local('Anivers_Bold'), url(../fonts/anivers_bold-webfont.woff) format('woff');
+
+    font-weight: 700;
+
+    font-style: normal;
+
+}
+
+@font-face {
+
+  font-family: 'robotobold';
+
+    src: local('Roboto Bold'), local('Anivers_Bold'), url(../fonts/roboto-bold-webfont.woff) format('woff');
+
+    font-weight: 700;
+
+    font-style: normal;
+
+}
+
+ 
+
+/* -----------------------------------------------------------
+
+RESET CSS - RESETS DEFAULT BROWSER CSS
+
+------------------------------------------------------------*/
+
+html {margin: 0; padding: 0; border: 0;}
+
+body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, code,del, dfn, em, img, q, dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, dialog, figure, footer, header,hgroup, nav, section {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; font-family:Arial,Helvetica,sans-serif; outline: none;}
+
+ 
+
+article, aside,details, figcaption, figure, dialog,footer, header, hgroup, menu, nav, section {display: block;}
+
+body {line-height: 1.5; font-family: 'aniverse'; font-size:13px;}
+
+a{ text-decoration:none;}
+
+ul li { list-style-type:none}
+
+.clear { clear:both}
+
+ 
+
+img { width:auto; height:auto; max-width:100%}
+
+ 
+
+.desktop-hide { display:none}
+
+.mobile-show { display:block}
+
+/*-----------------------------------------------------*/
+
+ 
+
+.container { width:998px; margin:0 auto;}
+
+.overlay { background:#BDB8B8; width:100%; height:100%; display:block; position: fixed; z-index:1; opacity:0; transition:opacity .3s ease}
+
+.overlay.active { opacity:1; }
+
+.modal-popup {width: 550px; height: 220px; background-color: blue; position: fixed; left:0; right:0; top:0; bottom:0; margin:auto; max-width:90%;  max-height:90%;  overflow:auto;z-index:2}
+
+.modal-popup { border-radius: 4px; background:#fff; transform:scale(0); transition:.5s ease all}
+
+.modal-popup.active { transform:scale(1)}
+
+.popup-copy { padding:10px;}
+
+.modal-popup .heading { background:#c61c2c; text-align:center; padding:10px; font-size:18px; color:#fff}
+
+.modal-popup .heading.sorrymsg { font-size:14px}
+
+.modal-popup input[type=password] {  border: 1px solid #c5c5c5;
+
+  border-radius: 2px;
+
+  padding: 10px 10px;
+
+  display: block;
+
+  width:40%;
+
+  font-size: 14px;
+
+  color: #616161;
+
+ 
+
+  transition: all .5s ease; margin:0 auto}
+
+.modal-popup .btn {  background: #d9283f;
+
+  background: -moz-linear-gradient(top, #d9283f 0%, #d32337 50%, #cd1e2f 100%);
+
+  background: -webkit-linear-gradient(top, #d9283f 0%,#d22236 50%,#cd1e2f 100%);
+
+  background: -o-linear-gradient(top, #d9283f 0%,#d22236 50%,#cd1e2f 100%);
+
+  background: -ms-linear-gradient(top, #d9283f 0%,#d22236 50%,#cd1e2f 100%);
+
+  background: linear-gradient(to bottom, #d9283f 0%,#d22236 50%,#cd1e2f 100%);
+
+  text-shadow: 0px 1px 0px rgb(154, 11, 29);
+
+  border: 1px solid #8f020e;
+
+  padding: 5px 20px;
+
+  font-size: 13px;
+
+  box-shadow: 0px 1px 2px rgb(204, 204, 204);
+
+  color: #FFF;
+
+  border-radius: 3px;
+
+  transition: all .5s ease;}
+
+.btn-panel { width:60px; margin:15px auto 0}
+
+ 
+
+/*--------------header------------*/
+
+.headerWrapper { background:#c61c2c; font:13px Arial, Helvetica, sans-serif; color:#fff; padding:.5em 0}
+
+.headerWrapper .header { float:left; width:100%}
+
+.headerWrapper .header .logo { display: inline-block}
+
+.headerWrapper nav { float: right; margin-top:2.3em}
+
+.naviagationLink li { margin:.1em .4em 0 0; float:left; cursor:pointer; position: relative}
+
+.naviagationLink li:first-child { padding-top:4px}
+.naviagationLink li:nth-child(4) { display: none;}
+
+.naviagationLink li:first-child a { color:#fff}
+
+.naviagationLink li:first-child a > img { position:relative; top:3px}
+
+.naviagationLink li.highlighted { background:#b70f1f; border-radius:4px; vertical-align: middle; text-align: center; padding:.4em 0.7em; transition:.5s ease all; width:16px; height:16px}
+
+.naviagationLink li.highlighted:last-child { width:auto}
+
+.naviagationLink li.highlighted a { color:#fff; vertical-align:middle}
+
+.naviagationLink li.highlighted:hover { background:#940815}
+
+ 
+
+ 
+
+ 
+
+..naviagationLink li.highlighted:nth-child(4) { font-weight:bold; font-size:12px; line-height:16px; margin-right:0; padding:.44em .9em; background:#c71c2c}
+
+.naviagationLink .tooltip { background:#3f3f3f; border-radius:4px; position: absolute; top:31px; left:-6px; padding:5px 8px; opacity:0; visibility:hidden; transition:.5s ease all; white-space:nowrap}
+
+.naviagationLink li:hover .tooltip { opacity:1; visibility:visible}
+
+.naviagationLink li:nth-child(2) .tooltip { left:-5px}
+
+.tooltip { background:#3f3f3f; border-radius:4px; position: absolute; top:28px; left:-6px; padding:5px 8px; opacity:0; visibility:hidden; transition:.5s ease all; white-space:nowrap}
+
+.naviagationLink li:nth-child(3) .tooltip { left:-29px}
+
+.naviagationLink li:hover .tooltip { opacity:1; visibility:visible}
+
+.logo { background: url(../images/abmu_logo.png) no-repeat 0 0; width:296px; height:76px}
+
+/*--------------end header------------*/
+
+ 
+
+ 
+
+.bannerWrapper { background-image: url(../images/banner-bg1.jpg); background-repeat:  no-repeat; background-position:  center center;
+
+  background-size: cover; padding:2em 0; overflow:hidden}
+
+.banner-text { font:70px 'aniversregular'; color:#fff;  width: 60%; xmargin-top:2%; float: left;transform: translateY(-50%); transition:.5s ease all; opacity:0}
+
+.banner-text.active {transform: translateY(0%); opacity:1}
+
+.date-panel { border:1px solid #fff; border-left:none; border-right:none; font-family: 'aniversregular'; font-size:30px; margin: 11px auto 0;
+
+xdisplay: inline-block; text-align: center; width: 278px; display: block;}
+
+ 
+
+.paperChart {  display: none; float:right; transform: translateY(100%); transition:.5s ease all .2s; opacity:0}
+
+.paperChart.active {transform: translateY(0%); opacity:1}
+
+ 
+
+.addBannerWrapper { background:#fff; padding:3em 0}
+
+.bannerAd { width: 730px; height:90px; margin:0 auto; background:#cccccc; text-align:center; line-height:2.5em; font-size:35px; font-family:'aniversregular'; color:#999}
+
+ 
+
+.portfolioWrapper { background:#f1f1f1; padding:4em}
+
+.h1 { text-align: center; font:35px 'aniversregular'; color:#333333;}
+
+.redLine { border-top:2px solid #d9645d; display: inline-block; width:50px; margin-top:.4em}
+
+ 
+
+.investment-panel { xpadding: 0 10em 3em; text-align: center; margin:5em 0 5em 0; box-shadow:0 1px 0px #dddddd, inset 0 -1px 0 #fff}
+
+.investBlock {xwidth:180px; text-align:center; padding: 0 2em;/* float:left; */ /* margin-right: 10%; */display: inline-block;}
+
+/*.investBlock .price { text-align: center; font-size:25px; color:#444444; font-family:Arial, Helvetica, sans-serif; font-weight: bold}*/
+
+.investBlock:nth-child(3) { margin-right:0}
+
+.investBlock:nth-child(3) .price { white-space:nowrap}
+
+.text-left { text-align: center; color:#777777; margin-top: 5px}
+
+.plIncrease { font-size:19px; color:#09ad26}
+
+.plDecrease { font-size:19px; color:#C61C2C}
+
+.snapshotCopy { text-align:center; color:#333333; font-size:15px; font-family: 'aniversregular'; width:80%; margin:20px auto 0}
+
+.copyFirst { display:block; margin-bottom:10px; font-family:'aniversregular';color:#333;}
+
+ 
+
+.pieChart { margin:45px auto; text-align:center}
+
+.chart.fixme { margin-top: 0}
+
+.chart { background:#fff; border-radius:2px; padding:1em; margin-top:1em; }
+
+.chart table tr th { background:#7f8794; border-right:1px solid #fff; padding:.5em; color:#fff; text-shadow:0 2px 0px #666; vertical-align:middle}
+
+.chart table tr th:first-child, .chart .fund-dtl1 tr td:first-child, .chart .fund-dtl2 tr td:first-child { width:40%}
+
+.chart table tr th:first-child { border-radius:3px 0 0px 3px}
+
+.chart table tr th:last-child { border-radius:0px 3px 3px 0px}
+
+.chart .fund-dtl1 tr td, .chart .fund-dtl2 tr td { border-bottom:1px solid #fff; border-right:1px solid #fff; vertical-align:middle; padding:.8em .8em; background:#ededed; text-align:center}
+
+.chart .fund-dtl1 tr td:first-child, .chart .fund-dtl2 tr td:first-child { text-align: left; padding-left:2em;color:rgba(0,0,0,0.9);}
+
+.chart .fund-dtl1 tr td:last-child, .chart .fund-dtl2 tr td:last-child { border-right:0; /* white-space: pre-wrap; */}
+
+.chart table tr th:nth-child(2), .chart .fund-dtl1 tr td:nth-child(2), .chart .fund-dtl2 tr td:nth-child(2), .chart table tr th:nth-child(3),
+
+.chart .fund-dtl1 tr td:nth-child(3); .chart .fund-dtl2 tr td:nth-child(3)
+
+{ width:15%}
+
+.chart table tr th:nth-child(4), .chart .fund-dtl1 tr td:nth-child(4), .chart .fund-dtl2 tr td:nth-child(4) { width:10%}
+
+.chart table tr th:nth-child(5), .chart .fund-dtl1 tr td:nth-child(5), .chart .fund-dtl2 tr td:nth-child(5) { width:10%}
+
+ 
+
+.chart .fund-dtl1 tr td:nth-child(2), .chart .fund-dtl1 tr td:nth-child(3),
+
+.chart .fund-dtl2 tr td:nth-child(2), .chart .fund-dtl1 tr td:nth-child(2) { width:15%}
+
+.chart .fund-dtl2 tr td:nth-child(6) { width:10%}
+
+ 
+
+ 
+
+ 
+
+ 
+
+.chart table tr:nth-child(2), .chart table tr:nth-child(8) { vertical-align:middle; }
+
+ 
+
+.chart .fund-dtl1 tr:nth-child(5) td, .chart .fund-dtl2 tr:nth-child(5) td { color:rgba(0,0,0,0.8)}
+
+/*.chart .fund-dtl tr:nth-child(13) td {font-weight:bold}*/
+
+.heading-funds { padding:0 0 10px!important; background:#fff !important; text-align:center !important; font-weight:bold;}
+
+.report-panel { margin:10px 0; float:left;}
+
+ 
+
+.report-panel a:hover { background:#c71c2c}
+
+.icon { position:relative; top:3px}
+
+.icon.two { top:4px}
+
+.icon.third { top:2px}
+
+ 
+
+.dtlPanel { float:right; margin-top:10px}
+
+.dtlPanel li { margin:.1em .4em 0 0; float:left; cursor:pointer; position: relative}
+.dtlPanel li:nth-child(3) { display: none;}
+
+.dtlPanel li a { color:#fff; vertical-align:middle; /* text-align: center; */ /* display: block; */}
+
+.dtlPanel li.highlighted { background: #999; border-radius:4px; vertical-align: middle; text-align: center; padding: .3em 0.7em; color:#fff; transition:.5s ease all; width: 13px; height: 19px;}
+
+.dtlPanel li.highlighted:last-child { width:auto; margin-right: 0}
+
+.dtlPanel li.highlighted:hover { background:#c71c2c}
+
+.dtlPanel li.highlighted:nth-child(4) {font-weight: bold; font-size: 12px; line-height: 19px; margin-right: 0px; padding: 0.35em 0.9em; background: none repeat scroll 0% 0% #C71C2C;display: inline-block;/* text-align: center; */}
+
+.dtlPanel .tooltip { background:#3f3f3f; border-radius:4px; position: absolute; top:31px; left:-6px; padding:5px 8px; opacity:0; visibility:hidden; transition:.5s ease all; white-space:nowrap}
+
+.dtlPanel li:hover .tooltip { opacity:1; visibility:visible}
+
+.dtlPanel li:nth-child(2) .tooltip { left:-28px}
+
+ 
+
+.confim-panel { width:100%; font-size:25px; color:#6B6B6B; margin:15px auto 15px; text-align:center; }
+
+.confim-panel > p {font-family: 'aniversregular' }
+
+.btn-black { background:#3f3f3f; padding:0 10px; line-height:28px; border-radius:4px; border:0; color:#fff; cursor:pointer; transition:.5s ease all}
+
+.btn-black:hover { background:#c71c2c}
+
+.confim-panel label { font-size:16px; display:block; text-align:left;font-family: 'aniversregular' }
+
+.list {width: 426px; margin: 10px auto;}
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+/*************footer*********************/
+
+td {vertical-align:top;}*/
+
+h1{font-size:18px; color:#333; font-weight:normal;}
+
+h2{font-size:14px; color:#333; font-weight:bold;}
+
+h3{font-size:12px; color:#333; font-weight:bold;}
+
+input, select{ font-family:Arial;}
+
+img{ border:none;}
+
+.clrBoth{ clear:both;}
+
+.fRt{ float:right!important;}
+
+.fLt{ float:left;}
+
+.fs11{ font-size:11px;}
+
+.fs12{ font-size:12px!important;}
+
+.fs14{ font-size:14px;}
+
+.mT2{margin-top:2px;}.mT5{margin-top:5px;}.mT5{margin-top:5px;}.mT7{margin-top:7px;}.mT10{margin-top:10px!important;}.mT15{margin-top:15px;}.mTn3{ margin-top:-3px;}.mB5{ margin-bottom:5px;}.mL5{margin-left:5px;}.mL10{margin-left:10px;}.mL17{margin-left:17px;}.mL30{margin-left:30px!important;}.pd10{ padding:10px!important;}.pT5{padding-top:5px!important;}.pT10{padding-top:10px!important;}.pL5{padding-left:5px;}.pL10{padding-left:10px;}.pL15{padding-left:15px;}.pR5{padding-right:5px;}.w203{ width:203px;}.w575{ width:575px;}.fullWidth{ width:100%;}.w23per{width:23%!important;}.h230{ height:230px;}.h232{ height:232px;}.lnHt18{line-height:18px;}.whiteBG{ background:#fff;}
+
+#mainContainer{ margin:0px; background: url(https://www.myuniverse.co.in/_layouts/images/ABMUPortal/topbg1.png;waf03d844955939150;wa6f8e7a5650d7d718) center top  no-repeat;}
+
+/* #headerContainer{ margin:0px auto;padding:15px 10px 0px 10px; width:983px; font-size:12px;}*/
+
+/*.companyName{ margin:0px ;float:left;}
+
+ 
+
+ 
+
+#bodyContainer{margin:0px auto; padding:15px 10px 0px 10px; width:999px; font-size:12px;}*/
+
+#ABMU_Footer_id_Footer,#id_Footer,#ctl00_ABMU_Footer_id_Footer {
+
+border-top: 1px solid #DEDEDE;
+
+border-bottom: 8px solid #C61C2C;
+
+background:#fff;
+
+width: 100%;
+
+clear:both;
+
+margin-top:35px;
+
+}
+
+.footerCont
+
+{
+
+    border-top: 1px solid #DEDEDE;
+
+border-bottom: 8px solid #C61C2C;
+
+background:#fff;
+
+width: 100%;
+
+clear:both;
+
+}
+
+#footerContainer {
+
+margin: 0px auto;
+
+padding: 0px 15px;
+
+width: 945px;
+
+font-size: 12px;
+
+}
+
+.footer {
+
+    border-top: medium none;
+
+    color: #777777;
+
+    font-size: 11px !important;
+
+    padding: 0;
+
+    text-align: center;
+
+}
+
+.popup_whiteBox{position:relative;background:; overflow:visible;}
+
+.popup_whiteCont{position:absolute; height: 20px; width: 20px; background-position: -84px -171px;}
+
+.popupWTL{top: 0px; left: 0px; clip: rect(0 10px 10px 0); }
+
+.popupWTR{top: 0px; right: 0px; clip: rect(auto auto 10px 10px); float: right;}
+
+.popupWBL{bottom: 0px;left: 0px; clip: rect(10px 10px auto auto); }
+
+.popupWBR{bottom: 0px; right: 0px;clip: rect(10px auto auto 10px); }
+
+.popupBdrTop{margin:0px;  background:url(https://www.myuniverse.co.in/sites/try/_layouts/images/ABMUPortal/popupWhtBoxBdrT.gif;wa4ae85bb145d0b6e7) right top repeat-x;  font-size:3px;padding-top:3px;}
+
+.popupBdrRit{margin:0px;  background:url(https://www.myuniverse.co.in/sites/try/_layouts/images/ABMUPortal/popupWhtBoxBdrR.gif;wa4476323bc4ef4e77) right top repeat-y; padding-right:3px; }
+
+.popupBdrBtm{padding:0px; background:url(https://www.myuniverse.co.in/sites/try/_layouts/images/ABMUPortal/popupWhtBoxBdrB.gif;wae3bddf93d7f290e2) left bottom repeat-x; margin-top:0px; height:3px; font-size:3px;}
+
+.popupBdrLft{margin:0px;  background:url(https://www.myuniverse.co.in/sites/try/_layouts/images/ABMUPortal/popupWhtBoxBdrL.gif;wad0185913fd8e6b3e) left top repeat-y; padding-left:3px;}
+
+.portlet{position:relative;background:#FFF; overflow:visible; border:1px solid #717171; }
+
+.portletCont{position:absolute; height: 12px; width: 12px; background-position: -105px 0px;}
+
+.portletTL{top: -1px; left: -1px; clip: rect(0 6px 6px 0);}
+
+.portletTR{top: -1px; right: -1px;_right: -2px; clip: rect(auto auto 6px 6px); float: right;}
+
+.portletBL{bottom: -1px;left: -1px;_bottom: -5px; clip: rect(6px 6px auto auto); }
+
+.portletBR{bottom: -1px; right: -1px;_bottom: -5px;_right: -2px;clip: rect(6px auto auto 6px); }
+
+.portlet_banner{position:relative;background:#FFF;overflow:visible;border:1px solid #717171;width:675px}
+
+.closeYloPop{width:10px; height:10px; background-image:url('/_layouts/images/ABMUPortal/icon_sprite.gif;wa3f2a4feb8be3085d'); background-position:-184px -128px; background-repeat:no-repeat; padding:0px; cursor:pointer;}
+
+.Calendar th, td{ display:table-cell; padding:5px 0; border:0px solid #cecece; vertical-align:top;}
+
+.inputSearch{ border:1px solid #7E9DB9; margin:0px; cursor:pointer; padding:2px 2px 1px 2px;*padding:1px 2px 0px 2px; background:#fff; border-right:none;}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {.inputSearch{ border:1px solid #7E9DB9; margin:0px; padding:0px; cursor:pointer; padding:1px; background:#fff; border-right:none; height:17px;}}
+
+/*.dataTable th, td{ display:table-cell; padding:5px; border:0px solid #cecece; vertical-align:top;text-align:left;}*/
+
+.popup_portlet_yellowBox{position:relative;background:#ffcd67; padding:3px!important;}
+
+.popup_portlet_yellowCont{position:absolute; height: 10px; width: 10px; background-position: -69px -174px;}
+
+.popupYloTL{top: 0px; left: 0px; clip: rect(0 5px 5px 0); }
+
+.popupYloTR{top: 0px; right: 0px; clip: rect(auto auto 5px 5px); float: right;}
+
+.popupYloBL{bottom: 0px;left: 0px; clip: rect(5px 5px auto auto); }
+
+.popupYloBR{bottom: 0px; right: 0px;clip: rect(5px auto auto 5px); }
+
+.sharepopupYloBL{bottom: -2px;left: 0px; clip: rect(3px 3px auto auto); }
+
+.sharepopupYloBR{bottom: -2px;right: -2px; clip: rect(5px auto auto 5px); }
+
+.black_overlay{display:none;position:absolute;min-height:100%;top:0px;left:0px;           width:100%;height:100%;overflow:hidden;background-color:#000;z-index:999; -moz-opacity:0.7;opacity:.70;filter:alpha(opacity=70);}
+
+.white_content {display:none;position: absolute;left:43%;margin-left:-300px !important;top:10%;padding:0px;background:#ffcd67;z-index:1000; font-size:12px;}
+
+.white_content_mid{display:none;position: absolute;left:50%;margin-left:-300px !important;top:10%;padding:0px;background:#ffcd67;z-index:1000; font-size:12px;}
+
+.iadisclaimer {
+
+    color: #989797 !important;
+
+    display: block;
+
+    font-size: 11px !important;
+
+    line-height: 13px;
+
+    width: 910px;
+
+    margin-bottom: 10px;
+
+}
+
+ 
+
+.footer {
+
+    border-top: medium none !important;
+
+    color: #777777 !important;
+
+    font-size: 11px !important;
+
+    margin-bottom: 10px !important;
+
+    padding: 0 !important;
+
+    text-align: center !important;
+
+}
+
+.footer-ico {
+
+    padding: 5px 0 2px;
+
+    text-align: center;
+
+}
+
+ 
+
+ 
+
+.footer a {
+
+    color: #777777;
+
+}
+
+ 
+
+.footer a:hover {
+
+    color: #777777;
+
+    text-decoration: underline;
+
+}
+
+#ABMU_Footer_id_broadcastmessage {
+
+    margin: 5px 0 0;
+
+    color: #989797;
+
+    font-size: 11px;
+
+    height:17px;
+
+}
+
+#id_broadcastingmessage
+
+{
+
+    color:#989797 !important;
+
+}
+
+ 
+
+ 
+
+.invest-copy {  border-radius: 2px;
+
+  background: #fff;
+
+  font-size: 14px;
+
+  font-family: 'aniversregular';
+
+  color: #4b7992;
+
+  width: 281px;
+
+  text-align: center;
+
+  line-height: 33px;
+
+  margin: 5px auto;
+
+}
+
+ 
+
+@media only screen and (max-width: 800px) and (min-width: 768px) {
+
+ 
+
+.invest-copy {  border-radius: 2px; background: #fff; font-size: 14px; font-family: 'aniversregular'; color: #4b7992; width: 230px;
+
+text-align: center; line-height: 33px;  }
+
+ 
+
+#footerContainer {width:750px;}
+
+ 
+
+.iadisclaimer { width:731px}
+
+ 
+
+.footer { width:734px}
+
+ 
+
+}
+
+ 
+
+@media only screen and (max-width: 767px) {
+
+.bannerWrapper { background-image: none; background-color: #66c2c1}
+
+  .invest-copy {margin: 2px auto}
+
+  .invest-copy { margin-bottom:10px}
+
+  .footer {margin-bottom: 24px!important;margin-top: 10px; width: 291px;}
+
+  .iadisclaimer { width:100%}
+
+  .report-panel {float:none; text-align: center;}
+
+ 
+
+  .dtlPanel li {
+
+    float:none;
+
+    text-align: center;
+
+    width: auto;
+
+  }
+
+ 
+
+.report-panel a:nth-child(1) {
+
+  display: block;
+
+  width: 90px;
+
+  margin: 0 auto;
+
+  margin-bottom: 7px;
+
+  padding: 2px 10px 6px 10px;
+
+}
+
+ 
+
+.dtail-btn { width: 80%; font-size: 15px}
+
+.btn-red { font-size: 17px;}
+
+ 
+
+}
+
+ 
+
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+
+ 
+
+                .footer {margin-bottom: 10px; width:100%}
+
+ 
+
+                .iadisclaimer { width:100%}
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+ 
+
+/**************************************/
+
+ 
+
+@media only screen and (max-width:1024px) {
+
+                .container { width:96%; padding:0 2%}
+
+                .investBlock { margin-right:8%}
+
+                .portfolioWrapper { padding:4em 0}
+
+}
+
+@media only screen and (max-width:1023px) and (min-width:768px) {
+
+                .container { width:96%; padding:0 2%}
+
+                .investBlock { margin-right:1%}
+
+                .portfolioWrapper { padding:4em 0}
+
+                .banner-text {font: 48px "aniversregular";}
+
+                .paperChart { width:40%}
+
+                .date-panel { margin-left:18%}
+
+                .investment-panel {padding: 0px 0em 3em;}
+
+ 
+
+                .headerWrapper .header .logo { display: block; margin:0 auto}
+
+                .headerWrapper nav { margin: 2.3em auto; float:none; width:75%}
+
+  .fixed {width:712px;}
+
+  .chart table tr th:first-child { width:40%;}
+
+ 
+
+  .chart table tr th:nth-child(2) {width:17.5%}
+
+  .chart .fund-dtl tr td:nth-child(2) {width:17.5%}
+
+  .chart .fund-dtl tr td:nth-child(4) { width: 16%}
+
+  .chart .fund-dtl tr td:nth-child(4) { width:13.5%}
+
+ 
+
+  .chart .fund-dtl1 tr td {border-bottom: 1px solid #FFF;
+
+border-right: 1px solid #FFF;
+
+vertical-align: middle;
+
+padding: 0.8em;
+
+background: #EDEDED none repeat scroll 0% 0%; text-align: center}
+
+  
+
+  .chart table tr th:nth-child(5) { width:25%}
+
+  .chart table tr th:nth-child(4) {width:15%}
+
+
+
+  .chart .fund-dtl1 tr td:first-child, .chart .fund-dtl2 tr td:first-child { width:34%}
+
+                .chart .fund-dtl1 tr td:nth-child(2), .chart .fund-dtl2 tr td:nth-child(2) { width:16%}
+
+                .chart .fund-dtl1 tr td:nth-child(3), .chart .fund-dtl2 tr td:nth-child(3) { width:14%}
+.chart .fund-dtl1 tr td:nth-child(4), .chart .fund-dtl2 tr td:nth-child(4) { width:13%}
+
+                .chart .fund-dtl1 tr td:nth-child(5), .chart .fund-dtl2 tr td:nth-child(5) { width:12%}
+                .chart .fund-dtl1 tr td:nth-child(6), .chart .fund-dtl2 tr td:nth-child(6) { width:33%}
+
+                .chart .fund-dtl1 tr td:first-child, .chart .fund-dtl2 tr td:first-child {padding-left: 15px;}
+
+                .chart .fund-dtl1 tr td {padding: 0.8em 1px;}
+
+
+}
+
+@media only screen and (max-width:767px) {
+
+                .container { width:96%; padding:0 2%}  
+
+                .headerWrapper .header .logo { xdisplay:inherit; margin:0 auto}
+
+  .headerWrapper .header .logo { display: block;}
+
+                .headerWrapper nav { margin: 2.3em auto; float:none; width:92%}
+
+                .banner-text {font: 48px "aniversregular"; float:none; margin:0 auto; width:65%}
+
+                .date-panel {display: block; width: 230px;margin: 15px auto 25px; white-space:nowrap}
+
+                .paperChart { width:50%; margin:0 auto; float:none}
+
+                .bannerAd { width:100%}
+
+                .investBlock {width:100%; padding: 0}
+
+                .investBlock, .investBlock:nth-child(3) { margin: 10% auto; float:none}
+
+                .portfolioWrapper {padding: 4em 0;}
+
+                .chart table tr td:nth-child(4), .chart table tr th:nth-child(4), .chart table tr td:nth-child(6), .chart table tr th:nth-child(6) { display: none}
+
+                .dtlPanel { float: none; /* margin: 0 auto; */ text-align: center; width: 98%; }
+
+                .fund-dtl2 tr td:first-child { width:23%}
+
+               
+
+                #footerContainer { width:90%}
+
+                .desktop-hide { display:block}
+
+                .mobile-hide { display:none}
+
+                .mobile-heading { font-size:18px; color:#333}
+
+               
+
+.call{ width:100%; display:block; padding-bottom:20px;}
+
+.call ul{ margin:30px auto 0; padding:0; list-style:none;}
+
+.call ul li{ display:block; border-top:1px solid #dadada; float:left; width:100%; padding-top:9px}
+
+.call ul li ul{ margin:0;}
+
+.call ul li ul li{ display:inline-block; border:none; padding:0; vertical-align:middle;}
+
+.call ul li ul li:first-child{ width:94px; text-align:left; font-size:13px; color:rgb(90,90,90); float:left; padding-left:10px; font-weight:bold}
+
+.call ul li ul li:last-child{ width:auto; text-align:right; vertical-align:middle; float:right;color:#8f8f8f; font-size:14px;  }
+
+.call ul li ul li:nth-child(2){ font-size:18px; color:#8f8f8f; word-wrap:break-word;text-align:left; float:right; width:auto; margin-left:10px;}
+
+.call ul li ul li a{color:#8f8f8f; text-decoration:none; font-weight:normal;}
+
+.call_icon{background: url(../images/mf__icons.png)  no-repeat -100px -80px !important;width:35px; height:25px;display:inline-block;}
+
+.email_icon , .print {background: url(../images/mf__icons.png)  no-repeat -143px -77px; width:35px; height:25px; display:inline-block;}
+
+.print { background:url(../images/print-icon.png) no-repeat 0 0 }
+
+.copy_right{background-color:#666; color:#c1c1c1;font-size:11px; padding:10px 0; text-align:center; width:100%; z-index:999999;}
+
+.copy_right a{ color:#c1c1c1;}
+
+.copy_right span a{ color:#c1c1c1;}
+
+.chart table tr td { padding:0}
+
+ 
+
+.chart .fund-dtl1 tr td, .chart .fund-dtl2 tr td  {padding: 0.8em .2em;}
+
+.chart .fund-dtl1 tr td:first-child, .chart .fund-dtl2 tr td:first-child { padding-left:10px}
+
+.heading-funds {padding: 8px 0px 8px !important;}
+
+ 
+
+.dtail-btn {width: 44%; margin-top: 2%;}
+
+.btn-red {font-size: 15px;}
+
+               
+
+}
+
+@media only screen and (max-width:767px) and (min-width:640px) {.headerWrapper nav { margin: 2.3em auto; float:none; width:92%}
+
+ 
+
+.chart table tr th:first-child { width:41%}
+
+.chart table tr th:nth-child(2), .chart .fund-dtl tr td:nth-child(2), .chart table tr th:nth-child(3), .chart .fund-dtl tr td:nth-child(3) { width:17%}
+
+.fixed { width: 92%}
+
+.investment-panel, .investBlock:nth-child(3) {margin: 1em 0 4em}
+
+.investBlock { margin:4% 0; width: 100%}
+
+ 
+
+.chart .fund-dtl1 tr td:first-child, .chart .fund-dtl2 tr td:first-child { width:48%}
+
+                .chart .fund-dtl1 tr td:nth-child(2), .chart .fund-dtl2 tr td:nth-child(2) { width:19.5%}
+
+                .chart .fund-dtl1 tr td:nth-child(3), .chart .fund-dtl2 tr td:nth-child(3) { width:20%}
+
+                .chart .fund-dtl1 tr td:nth-child(5), .chart .fund-dtl2 tr td:nth-child(5) { width:16%}
+
+}
+
+@media only screen and (max-width:639px) and (min-width:480px) {.link-btn.last { display: inline-block; margin-top:10px; }
+
+.banner-text{ width:100%; text-align:center}
+
+.confim-panel { width:100%}
+
+.confim-panel > p { line-height:25px}
+
+.dtlPanel li.highlighted:nth-child(4) {line-height: 19px;padding: 0.33em 0.9em; width: auto;}
+
+.chart table tr th:first-child { width:36%}
+
+.fixed {width:90.5%}
+
+ 
+
+.chart .fund-dtl1 tr td:first-child, .chart .fund-dtl2 tr td:first-child { width:38%}
+
+                .chart .fund-dtl1 tr td:nth-child(2), .chart .fund-dtl2 tr td:nth-child(2) 
+                { width:22%}
+
+                .chart .fund-dtl1 tr td:nth-child(3), .chart .fund-dtl2 tr td:nth-child(3) 
+                { width:22%}
+
+                .chart .fund-dtl1 tr td:nth-child(5), .chart .fund-dtl2 tr td:nth-child(5)
+                 { width:15%}
+
+               
+
+ 
+
+               
+
+                .chart table tr th:nth-child(2) { width:21%}
+
+                .chart table tr th:nth-child(3) { width:20.9%}
+
+                .chart table tr th:nth-child(5) { width:10%             }
+
+}
+
+               
+
+@media only screen and (max-width:479px) and (min-width:360px) {
+
+                .investment-panel { padding:0}
+
+                .chart .fund-dtl tr td:first-child, .chart .fund-dtl2 tr td:first-child {padding-left:.5em}
+
+                .chart table tr th:first-child { width:30%}
+
+                .chart .fund-dtl tr td:first-child { width:46%}
+
+                .chart .fund-dtl tr td:nth-child(2) { width:19%}
+
+                .chart .fund-dtl tr td:nth-child(3) { width:6%}
+
+                .chart .fund-dtl tr td:nth-child(5) { width:38%}
+
+               
+
+                .chart .fund-dtl1 tr td:first-child { width:32%}
+
+                .chart .fund-dtl1 tr td:nth-child(2) { width:22%}
+
+                .chart .fund-dtl1 tr td:nth-child(3) { width:22%}
+
+                .chart .fund-dtl1 tr td:nth-child(5) { width:18%}
+
+               
+
+                               
+
+.chart .fund-dtl2 tr td:first-child { width:32%}
+
+                .chart .fund-dtl2 tr td:nth-child(2) { width:22%}
+
+                .chart .fund-dtl2 tr td:nth-child(3) { width:22%}
+
+                .chart .fund-dtl2 tr td:nth-child(5) { width:18%}
+
+                .chart .fund-dtl2 tr td:first-child {padding-left: 2px;}
+
+               
+
+               
+
+                .fund-dtl2 tr td:first-child { width:34%}
+
+                .chart table tr th:nth-child(2) { width:21%}
+
+                .chart table tr th:nth-child(3) { width:20.9%}
+
+                .chart table tr th:nth-child(5) { width:2%                }
+
+               
+
+                 
+
+                 .link-btn.last { display:inline-block; margin-top:10px}
+
+                .banner-text { width:90%; font-size:35px; text-align:center}
+
+                .modal-popup { height:260px}
+
+               
+
+                 .dtail-btn { width:72%}
+
+}
+
+@media only screen and (max-width:359px) and (min-width:320px) {
+
+                .headerWrapper nav { margin-top:1.5em; width:78%}
+
+                .naviagationLink li:first-child, .banner-text { width:100%}
+
+                .banner-text { text-align:center; font-size:40px}
+
+                .paperChart { float:none; margin:0 auto}
+
+                .investment-panel { padding:0}
+
+                .investBlock:nth-child(3) .price { white-space:normal}
+
+                .report-panel a { display: inline-block; padding:0.2em .9em}
+
+                .report-panel .link-btn.last { margin-top:10px}
+
+                .confim-panel { width:100%}
+
+                .date-panel { font-size:28px}
+
+                .banner-text {font-size:36px}
+
+                .dtlPanel li.highlighted:nth-child(4) { font-size:11px; height:18px; /* margin-left: 33%; */}
+
+                .chart .fund-dtl tr td:first-child, .chart .fund-dtl2 tr td:first-child { padding-left:.2em}
+
+                .chart { padding:5px}
+
+                .chart table tr th:first-child { width:41%}
+
+                .fund-dtl2 tr td:first-child { width:35%}
+
+                .modal-popup { height:260px}
+
+  .btn-red { font-size: 14px;}
+
+  .chart table tr th:nth-child(2) { width: 28%}
+
+  .chart table tr th:nth-child(3) { width: 50%}
+
+ 
+
+  .chart .fund-dtl1 tr td {padding: 0.8em 1px;}
+
+.chart .fund-dtl1 tr td:first-child { width:30%}
+
+                .chart .fund-dtl1 tr td:nth-child(2) { width:25%}
+
+                .chart .fund-dtl1 tr td:nth-child(3) { width:0%}
+
+                .chart .fund-dtl1 tr td:nth-child(5) { width:21%}
+
+                .chart .fund-dtl1 tr td:first-child {padding-left: 2px;}
+
+                .chart .fund-dtl1 tr td {padding: 0.8em 1px;}
+
+               
+
+               
+
+.chart .fund-dtl2 tr td:first-child { width:30%}
+
+                .chart .fund-dtl2 tr td:nth-child(2) { width:24%}
+
+                .chart .fund-dtl2 tr td:nth-child(3) { width:25%}
+
+                .chart .fund-dtl2 tr td:nth-child(5) { width:23%}
+
+                .chart .fund-dtl2 tr td:first-child {padding-left: 2px;}
+
+                .dtail-btn { width:77%}
+
+                }
